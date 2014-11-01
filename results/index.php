@@ -68,7 +68,7 @@ require('../header.php');
 			<div id="results-slider" class="col-sm-5">
 				<img class="img-responsive" id="slider-current-img">
 				<div class="slider-pagination">
-					<img id="slider-pag-back" src="../img/arrow_left_lblue.png">&nbsp;
+					<img id="slider-pag-backward" src="../img/arrow_left_lblue.png">&nbsp;
 					<span id="slider-pag-number">1</span>&nbsp;
 					<img id="slider-pag-forward" src="../img/arrow_right_lblue.png">
 				</div>
@@ -100,6 +100,10 @@ require('../header.php');
 </div>
 
 <script>
+var currentPag = 1;
+var currentPagLength = 0;
+var currentIndex = 0;
+    
 var resultData = null;
 var imageDirectory = "../img/results/"
 $(".menu li:nth-child(2) a").addClass("active-menu-item");
@@ -114,6 +118,8 @@ $.getJSON('../js/results.json', function(data) {
 	$(".results-menu-container-ul li").width( (100 / data.length) + "%" );
 	switchResult(0);
 	$(".result-menu-item[resultid=0]").addClass("results-active");
+    currentPagLength = resultData[0].images.length;
+    currentIndex = 0;
 });
 	
 function switchResult(id) {
@@ -123,6 +129,9 @@ function switchResult(id) {
 	$("#result-challenge").html(resultData[id].challenge);
 	$("#result-approach").html(resultData[id].approach);
 	$("#result-results").html(resultData[id].results);
+    currentIndex = id;
+    currentPag = 1;
+    currentPagLength = resultData[currentIndex].images.length;
 	
 	// Fill capabilities
 	var capabilities = resultData[id].capabilities;
@@ -135,6 +144,42 @@ function switchResult(id) {
 	if (resultData[id].images.length > 1) {
 		$("#slider-pag-forward").attr("src", "../img/arrow_right_blue.png");
 	}
+    replaceArrows();
+    $("#slider-pag-number").html(currentPag);
+}
+  
+$(document).on("click", "#slider-pag-forward", function() {
+    if (currentPag != currentPagLength) {
+        currentPag += 1;
+        $("#slider-pag-number").html(currentPag);
+        $("#slider-current-img").attr("src", imageDirectory + resultData[currentIndex].images[currentPag-1]);
+        replaceArrows();
+    }
+});
+    
+$(document).on("click", "#slider-pag-backward", function() {
+    if (currentPag != 1) {
+        currentPag -= 1;
+        $("#slider-pag-number").html(currentPag);
+        $("#slider-current-img").attr("src", imageDirectory + resultData[currentIndex].images[currentPag-1]);
+        replaceArrows();
+    }
+});
+    
+function replaceArrows() {
+    if (currentPag === 1) {
+        $("#slider-pag-backward").attr("src", "../img/arrow_left_lblue.png");
+    }
+    else {
+        $("#slider-pag-backward").attr("src", "../img/arrow_left_blue.png");
+    }
+    
+    if (currentPag === resultData[currentIndex].images.length) {
+        $("#slider-pag-forward").attr("src", "../img/arrow_right_lblue.png");
+    }
+    else {
+        $("#slider-pag-forward").attr("src", "../img/arrow_right_blue.png");
+    }
 }
 	
 $(document).on("click", ".result-menu-item", function() {
