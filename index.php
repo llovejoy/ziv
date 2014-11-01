@@ -31,8 +31,22 @@
 </head>
 
 <body>
-
-	<div class="container-header">
+    
+	   <div class="container-header">
+        
+        <div class="menu-mobile">
+            <table class="menu-mobile-table">
+                <tr>
+                    <td><a href="<?php echo $dom; ?>how-we-can-help">how we can help</a> </td>
+                    <td><a href="<?php echo $dom; ?>results">results</a></td>
+                </tr>
+                <tr>
+                    <td><a href="<?php echo $dom; ?>about">about</a></td>
+                    <td><a href="<?php echo $dom; ?>contact">contact</a></td>
+                </tr>
+            </table>
+        </div>
+           
 		<div class="container-menu">
 			<ul class="menu clearfix">
 				<li><a href="<?php echo $dom; ?>how-we-can-help">how we can help</a>
@@ -44,20 +58,55 @@
 				<li><a href="<?php echo $dom; ?>contact">contact</a>
 				</li>
 			</ul>
+            
 			<div class="container">
 				<a href="index.php">
 					<img src="<?php echo $dom; ?>img/logo.png" class="logo-img">
 				</a>
 			</div>
+            
+            <div class="menu-mobile-button pull-right">
+                <button class="btn btn-default"><span class="glyphicon glyphicon-th-large"></span>&nbsp;Menu</button>
+            </div>
+            
+            
 		</div>
 	</div>
+    
+    <style>
+        .menu-mobile {
+            display: none;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            z-index: 999;
+        }
+        
+        .menu-mobile-table {
+            width: 100%;
+            background-color: #0072B6;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .menu-mobile-table td {
+            width: 50%;
+            text-align: center;
+            color: white;
+        }
+        
+        .menu-mobile-table td a {
+            color: white;
+        }
+    </style>
 
 
 	<img src="img/home-photo.png" class="photo-offset">
 
 	<div class="container-home-body">
 		<div class="home-body-text container">
-			<p class="text-home-lead-body" style="position: relative; top: -30px;">We offer experience innovation, inter-disciplinary<br>strategic, creative and technical skills that meet<br>today's marketing demands.</p>
+			<p class="text-home-lead-body" style="">We offer experience innovation, inter-disciplinary<br>strategic, creative and technical skills that meet<br>today's marketing demands.</p>
 			<br>
 			<p class="lead" style="font-size: 24px;">Whether, it's creating a brand or implementing a digital solution to disrupt your industry, transforming your customer's experience to gain loyalty, or executing a marketing strategy for needed growth - <strong>we've got you covered.</strong>
 			</p>
@@ -113,6 +162,23 @@
         textFit($(".polish"), {});
         textFit($(".text-home-lead-body"), { multiLine: true, maxFontSize: 40 });
     </script>
+    
+    <style>
+    @media all and (min-width: 620px) {
+        .menu-mobile { display: none; }
+    }
+        
+    @media all and (max-width: 620px) {
+        .menu { display: none;  }
+        .photo-offset {
+            top: 80px;
+        }
+        .text-home-lead-body, .lead, .home-sections, .polish, .home-blueorange-bar, .home-foot, .footer {
+            position: relative;
+            top: 80px;
+        }
+    }
+    </style>
 
 
 	<?php require( 'footer.php'); ?>

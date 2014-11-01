@@ -53,7 +53,8 @@
 				$('.menu').removeClass('menu-bigger');
 				$('.menu').addClass('menu-smaller');
 			}
-		} else {
+		}
+        else {
 			if ($('.container-header').data('size') == 'small') {
 				$('.container-header').data('size', 'big');
 				$('.container-header').removeClass('container-header-smaller');
@@ -65,6 +66,10 @@
 			}
 		}
 	});
+    
+    $(".menu-mobile-button").click(function() {
+        $(".menu-mobile").slideToggle();
+    });
 </script>
 
 </html>

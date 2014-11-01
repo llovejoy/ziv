@@ -135,14 +135,12 @@ a {
 
 
 
-.container-home-body {
-
-}
-
 .text-home-lead-body {
 	font-size: 40px;
 	color: #444444;
 	font-weight: 200;
+    position: relative; 
+    top: -30px;
 }
 
 .home-blueorange-bar {
@@ -419,4 +417,20 @@ input {
 
 .core-service-intro {
     color: #00A5E3;
+}
+
+.menu-mobile {
+    display: none; 
+}
+
+.menu-mobile-button {
+    position: relative;
+    top: -60px;
+    margin-right: 10px;
+}
+
+@media all and (min-width: 620px) {
+    .menu-mobile, .menu-mobile-button {
+        display: none;
+    }
 }
