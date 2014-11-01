@@ -27,6 +27,7 @@
 	<script src="js/vendor/jquery.js"></script>
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	<script src="js/vendor/bootstrap.js"></script>
+    <script src="js/vendor/textFit.min.js"></script>
 </head>
 
 <body>
@@ -45,7 +46,7 @@
 			</ul>
 			<div class="container">
 				<a href="index.php">
-					<img src="http://www.nathanfrancy.com/test/ziv/img/logo.png" class="logo-img">
+					<img src="<?php echo $dom; ?>img/logo.png" class="logo-img">
 				</a>
 			</div>
 		</div>
@@ -56,7 +57,7 @@
 
 	<div class="container-home-body">
 		<div class="home-body-text container">
-			<p class="text-home-lead-body" style="position: relative; top: -30px;">We offer experience innovation, inter-disciplinary strategic, creative and technical skills that meet today's marketing demands.</p>
+			<p class="text-home-lead-body" style="position: relative; top: -30px;">We offer experience innovation, inter-disciplinary<br>strategic, creative and technical skills that meet<br>today's marketing demands.</p>
 			<br>
 			<p class="lead" style="font-size: 24px;">Whether, it's creating a brand or implementing a digital solution to disrupt your industry, transforming your customer's experience to gain loyalty, or executing a marketing strategy for needed growth - <strong>we've got you covered.</strong>
 			</p>
@@ -76,7 +77,7 @@
 				</div>
 			</div>
 			<br>
-			<h2 class="text-center" style="font-size: 44.5px;">Because every business could use a polish/boost.</h2>
+			<h2 class="polish text-center" style="font-size: 34.5px; color: #444444;">Because every business could use a polish/boost.</h2>
 			<br>
 			<br>
 		</div>
@@ -84,13 +85,13 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-5">
-						<h1 style="font-size: 45px;"><strong>Being said...</strong></h1>
+						<h1 style="font-size: 45px;">Being said...</h1>
 						<p style="font-size: 23px;">The lowdown on emotional branding ow.ly/zvozU
 							<br><small>Aug 13</small>
 						</p>
 					</div>
 					<div class="col-sm-5 col-sm-offset-2">
-						<h1 style="font-size: 45px;"><strong>What we're up to</strong></h1>
+						<h1 style="font-size: 45px;">What we're up to</h1>
 						<p style="font-size: 23px;">Our startup client hit their 3 month projection out of the gate.
 							<br><small>Aug 13</small>
 						</p>
@@ -107,6 +108,11 @@
 		</div>
 
 	</div>
+    
+    <script>
+        textFit($(".polish"), {});
+        textFit($(".text-home-lead-body"), { multiLine: true, maxFontSize: 40 });
+    </script>
 
 
 	<?php require( 'footer.php'); ?>

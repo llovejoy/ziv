@@ -68,9 +68,11 @@ require('../header.php');
 			<div id="results-slider" class="col-sm-5">
 				<img class="img-responsive" id="slider-current-img">
 				<div class="slider-pagination">
-					<img id="slider-pag-backward" src="../img/arrow_left_lblue.png">&nbsp;
-					<span id="slider-pag-number">1</span>&nbsp;
-					<img id="slider-pag-forward" src="../img/arrow_right_lblue.png">
+                    <center>
+                        <img id="slider-pag-backward" src="../img/arrow_left_lblue.png">&nbsp;
+                        <span id="slider-pag-number">1</span>&nbsp;
+                        <img id="slider-pag-forward" src="../img/arrow_right_lblue.png">
+                    </center>
 				</div>
 			</div>
 		</div>

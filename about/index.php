@@ -1,12 +1,24 @@
 <?php
 require('../header.php');
+
+// Initialize keywords
+$first_keyword_array = array("ideas", "concepts", "initiatives");
+$second_keyword_array = array("click", "resonate", "thrive");
+
+// Get random index from the arrays
+$first_keyword_index = array_rand($first_keyword_array);
+$second_keyword_index = array_rand($second_keyword_array);
+
+// Assign keyword to variable
+$first_keyword = $first_keyword_array[$first_keyword_index];
+$second_keyword = $second_keyword_array[$second_keyword_index];
 ?>
 
 <div class="container-hwch-body">
 
 	<div class="top-bar">
 		<div class="container">
-			<h2>We bring <strong>ideas</strong> to life so they <strong>click</strong> with customers</h2>
+			<h2>We bring <strong><?php echo $first_keyword; ?></strong> to life so they <strong><?php echo $second_keyword; ?></strong> with customers</h2>
 		</div>
 	</div>
 
@@ -71,7 +83,7 @@ require('../header.php');
 	<div class="about-greybg container-fluid">
 		<div class="container">
 			<br><br>
-			<p>OUR HISTORY</p>
+			<p class="cap-subtitle">OUR HISTORY</p>
 			<center>
 				<img src="../img/about-timeline.jpg" class="img-responsive"><br><br><br>
 				<img src="../img/about-map.jpg" class="img-responsive"><br>
@@ -79,14 +91,14 @@ require('../header.php');
 		</div>
 	</div>
 	
-	<br><br>
+	<br><br><br>
 	
 	<div class="container">
-		<p>WHY WE DO WHAT WE DO</p>
+		<p class="cap-subtitle">WHY WE DO WHAT WE DO</p>
 		<h3 class="about-header">70% of the 1.6 billion people living in extreme poverty are women. We give back by investing in disadvantaged women so they are empowered to change the world.</h3>
 	</div>
 	
-	<br><br>
+	<br><br><br>
 	
 	<img src="../img/about-infographic.png" class="img-responsive">
 

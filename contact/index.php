@@ -1,10 +1,21 @@
-<?php require( '../header.php'); ?>
+<?php 
+require( '../header.php'); 
+
+// Initialize keywords
+$first_keyword_array = array("hear from", "work with", "talk with");
+
+// Get random index from the arrays
+$first_keyword_index = array_rand($first_keyword_array);
+
+// Assign keyword to variable
+$first_keyword = $first_keyword_array[$first_keyword_index];
+?>
 
 <div class="container-hwch-body">
 
 	<div class="top-bar">
 		<div class="container">
-			<h2>We'd love to hear from you. (work with/talk with)</h2>
+			<h2>We'd love to <strong><?php echo $first_keyword; ?></strong> you.</h2>
 		</div>
 	</div>
 	

@@ -26,6 +26,7 @@
 		<script src="../js/vendor/jquery.js"></script>
         <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
 		<script src="../js/vendor/bootstrap.js"></script>
+        <script src="../js/vendor/textFit.min.js"></script>
     </head>
     <body>
 		
@@ -38,8 +39,8 @@
 					<li><a href="<?php echo $dom; ?>contact">contact</a></li>
 				</ul>
 				<div class="container">
-					<a href="http://www.nathanfrancy.com/test/ziv/index.php">
-						<img src="http://www.nathanfrancy.com/test/ziv/img/logo.png" class="logo-img">
+					<a href="<?php echo $dom; ?>index.php">
+						<img src="<?php echo $dom; ?>img/logo.png" class="logo-img">
 					</a>
 				</div>
 			</div>

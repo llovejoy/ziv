@@ -7,8 +7,12 @@ a {
 	color: #0072B6;
 }
 
+.container {
+    max-width: 960px !important;
+}
+
 .column-header {
-	font-size: 50px;
+	font-size: 35px;
 	font-weight: 100 !important;
 	color: #0072B6;
 }
@@ -136,7 +140,7 @@ a {
 }
 
 .text-home-lead-body {
-	font-size: 44.5px;
+	font-size: 40px;
 	color: #444444;
 	font-weight: 200;
 }
@@ -162,7 +166,7 @@ a {
 }
 
 .home-sections p {
-	font-size: 25px;
+	font-size: 20px;
 }
 
 
@@ -178,11 +182,9 @@ a {
 }
 
 .grey-blocks .row {
-	padding-top: 20px;
 }
 
 .grey-blocks .col-sm-6 {
-	background-color: #F6F6F6;
 	display: table-cell;
 	min-height: 236px;
 }
@@ -194,6 +196,7 @@ a {
 	font-size: 20px;
 	text-align: center;
 	color: #535353;
+    min-height: 80px;
 }
 
 
@@ -202,6 +205,7 @@ a {
 	color: #0071B8;
 	font-size: 30px;
 	margin-bottom: 2px;
+    font-weight: 700;
 }
 
 .results-body-paragraph {
@@ -244,6 +248,7 @@ a {
 }
 
 #slider-pag-forward:hover, #slider-pag-backward:hover { cursor: pointer; }
+#slider-pag-number { color: #0071B8; }
 
 .feature-heading {
 	font-size: 16px;
@@ -378,6 +383,12 @@ input {
 	color: #AAAAAA;
 }
 
+.footer-wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 .footer strong {
 	color: #AAAAAA;
 }
@@ -399,4 +410,13 @@ input {
    display: block;
    height: 0;
    clear: both;
+}
+
+.cap-subtitle {
+    text-align: center;
+    font-size: 26px;
+}
+
+.core-service-intro {
+    color: #00A5E3;
 }
