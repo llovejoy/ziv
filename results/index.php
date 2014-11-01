@@ -1,0 +1,149 @@
+<?php
+require('../header.php');
+?>
+
+<div class="container-hwch-body">
+
+	<div class="top-bar">
+		<div class="container">
+			<h2>Your goals + our <strong>expertise</strong> = <strong>results</strong></h2>
+		</div>
+	</div>
+
+	<img src="../img/results-top-graphic.jpg" class="photo-full-size">
+
+	<br><br>
+
+	<div class="container">
+		<h3 class="hwch-lead">We work with innovative companies who understand that well crafted human experiences are good for business.</h3>
+	</div>
+	
+	<br><br>
+	
+	<div class="container">
+		<p>5 GOALS WE SEEK TO ACCOMPLISH WITH EVERY PROJECT</p>
+		
+		<h3 class="results-body-header">Communicate well</h3>
+		<p class="results-body-paragraph">So your customer can understand you, relate to you, share you and successfully accomplish any digital tasks.</p>
+		
+		<h3 class="results-body-header">Stand out with excellence</h3>
+		<p class="results-body-paragraph">Be relevant to your customers. We connect the marketing and branding dots.</p>
+		
+		<h3 class="results-body-header">Leap frog the competition</h3>
+		<p class="results-body-paragraph">Innovate against your competitors and find your competitive advantage.</p>
+		
+		<h3 class="results-body-header">Set direction for the next stage of growth</h3>
+		<p class="results-body-paragraph">Your business can know how it should grow next, with a brilliant strategy.</p>
+		
+		<h3 class="results-body-header">Expect exceptional results</h3>
+		<p class="results-body-paragraph">Your bottomline matters. We create for results (Execution).</p>
+	</div>
+	
+	<br><br>
+	
+	<div class="results-menu-container">
+		<div class="container">
+			<ul class="results-menu-container-ul">
+			</ul>
+		</div>
+	</div>
+	
+	<br>
+	
+	<div class="features container">
+		<div class="row feature-zoomin">
+			<div class="col-sm-7">
+				<h3 class="feature-heading">Challenge</h3>
+				<p class="feature-paragraph" id="result-challenge"></p>
+				
+				<h3 class="feature-heading">Approach</h3>
+				<p class="feature-paragraph" id="result-approach"></p>
+				
+				<h3 class="feature-heading">Results</h3>
+				<p class="feature-paragraph" id="result-results"></p>
+				
+				<h3 class="feature-heading">Capabilities</h3>
+				<ul class="feature-list" id="result-capabilities"></ul>
+			</div>
+			<div id="results-slider" class="col-sm-5">
+				<img class="img-responsive" id="slider-current-img">
+				<div class="slider-pagination">
+					<img id="slider-pag-back" src="../img/arrow_left_lblue.png">&nbsp;
+					<span id="slider-pag-number">1</span>&nbsp;
+					<img id="slider-pag-forward" src="../img/arrow_right_lblue.png">
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+	
+	<div class="results-menu-container" style="height: 15px;"></div>
+	
+	<div class="results-quote">
+		<div class="container">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10">
+				<br>
+				<p class="results-quote-body">Wanted to let you know the solution went to beta last week with our first retail client. Feedback has been very favorable on the design and intuitive nature of the product. Thanks for all the help and guideance in creating a good product and user experience.</p>
+				<p class="results-quote-author">Charles Murphy <br><span class="results-quote-title">Online banking solution</span></p>
+				<br>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+	</div>
+
+	<div class="home-foot text-center">
+		<h3>Looking for results?</h3>
+		<p>Explore our capabilities and see <a href="#">what we do.</a></p>
+	</div>
+
+</div>
+
+<script>
+var resultData = null;
+var imageDirectory = "../img/results/"
+$(".menu li:nth-child(2) a").addClass("active-menu-item");
+	
+// Get all the result data and place it into resultData variable, also replace the starting data with the first result
+$.getJSON('../js/results.json', function(data) {
+	resultData = data;
+
+	for (var i = 0; i < data.length; i++) {
+  		$(".results-menu-container-ul").append("<li class='result-menu-item' resultid='"+ data[i].id +"'>" + data[i].title + "</li>");
+    }
+	$(".results-menu-container-ul li").width( (100 / data.length) + "%" );
+	switchResult(0);
+	$(".result-menu-item[resultid=0]").addClass("results-active");
+});
+	
+function switchResult(id) {
+	// Clean area up, replace with pertinent values
+	$(".results-menu-container-ul li").removeClass("results-active");
+	$("#result-capabilities").html('');
+	$("#result-challenge").html(resultData[id].challenge);
+	$("#result-approach").html(resultData[id].approach);
+	$("#result-results").html(resultData[id].results);
+	
+	// Fill capabilities
+	var capabilities = resultData[id].capabilities;
+	for (var i = 0; i < capabilities.length; i++) {
+		$("#result-capabilities").append("<li>" + resultData[id].capabilities[i] + "</li>");
+	}
+	
+	// Replace image with first pertinent image available
+	$("#slider-current-img").attr("src", imageDirectory + resultData[id].images[0]);
+	if (resultData[id].images.length > 1) {
+		$("#slider-pag-forward").attr("src", "../img/arrow_right_blue.png");
+	}
+}
+	
+$(document).on("click", ".result-menu-item", function() {
+	var id = parseInt($(this).attr("resultid"));
+	switchResult(id);
+	$(this).addClass("results-active");
+});
+</script>
+
+<?php
+require('../footer.php');
+?>

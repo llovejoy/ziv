@@ -1,0 +1,87 @@
+[
+	{
+		"id" : 0,
+		"title": "Zoomin Market",
+		"challenge": "<p>The client had an idea to revolutionize the grocery industry by creating a drive-thru and pickup grocery store. They came to us for a name and a brand, but we delivered all their mar-keting collateral and orchestrated their launch with three events and a comprehensive marketing plan.</p>",
+		"approach": "<p>We knew they needed to attract people to give this new model of grocery shopping a try and clearly distinguish themselves from the competition. A catchy name, and vibrant brand and a carefully orchestrated launch and marketing strategy did the trick.</p>",
+		"results": "<p>Additional investors came calling within a few weeks of open-ing. We increased their social media reach by 1000% over 6 months, allowing them to hit their 3 month projections out of the gate. </p>",
+		"capabilities": [
+			"Consumer & Business Insights (VOC)",
+			"Branding, Naming & Identity",
+			"Social Media Strategy",
+			"Advertising",
+			"Content Marketing",
+			"eCRM"
+		],
+		"images": [
+			"zoomin1.jpg",
+			"zoomin2.jpg"
+		]
+	},
+	{
+		"id" : 1,
+		"title": "Texada",
+		"challenge": "<p>Texada, a software development company that builds a vari-ety of software products, was finding that their competitors were moving impinging on their market with newer more us-er-friendly systems. As a stop gap they wanted to upgrade their system without investing in a new backend.</p>",
+		"approach": "<p>Taking their existing the screens and user flows, we created three distinct looks to provide a fresh vision for the system. Once an approach was selected we applied that to their in-terface, along with fresh iconography and restructured pag-es.</p>",
+		"results": "<p>Best summed up by the solution owner…</p>",
+		"capabilities": [
+			"Interface design",
+			"Visual design",
+			"UX strategy"
+		],
+		"images": [
+			"texada1.jpg"
+		]
+	},
+	{
+		"id" : 2,
+		"title": "Woodley",
+		"challenge": "<p>A local minority owned business needed a new web pres-ence that represented who they had become. With an exist-ing site that hadn’t been updated for 10 years, and a growing employee base and increasingly larger clients they needed a brand refresh.</p>",
+		"approach": "<p>With a slight modernization to their brand identity, special care was taken to communicate specific services, and giving them a very modern and clean looking website. Content was rewritten to incorporate SEO.</p>",
+		"results": "<p>With increased credibility and the communication of their his-tory, Woodley distinctly set themselves apart from the com-petition, setting the bar high as they do with their services.</p>",
+		"capabilities": [
+			"Consumer & Business Insights (VOC)",
+			"Content Strategy",
+			"Information architecture",
+			"SEO",
+			"Web Design"
+		],
+		"images": [
+			"woodley1.jpg",
+			"woodley2.jpg"
+		]
+	},
+
+	{
+		"id" : 3,
+		"title": "OP Golf",
+		"challenge": "<p>With 2 courses and a city division, and no distinct identity, the courses had taken on the city logo as a brand but it was a poor representation and didn’t communicate the caliber and distinction they offered as course.</p>",
+		"approach": "<p>Creating a family of identities that worked both individually and as a system, we capitalized on existing brand aspects, for St. Andrew’s Golf Course it was the lion which was mod-ernized, and for the Sykes Lady Golf Course it was taking the word Sykes (meaning by the water) and then to fashion an oak leaf that was created using the shape of the in course bodies of water.</p>",
+		"results": "<p>The brand identities were easily approved by Overland Park’s city government, and have proven to increase club membership and professionalism.</p>",
+		"capabilities": [
+			"Consumer & Business Insights (VOC)",
+			"Brand strategy",
+			"Identity design",
+			"Strategic consulting"
+		],
+		"images": [
+			"opgolf1.jpg"
+		]
+	},
+	{
+		"id" : 4,
+		"title": "NRCCUA",
+		"challenge": "<p>With new players entering the market, myCollegeOptions needed to up their game. Not only with a visual refresh, but also reworking touchpoints and interactions with their users.</p>",
+		"approach": "<p>We divided our recommendations into quick wins and a long term plan. This allowed us to quickly improve their existing platform, while setting a vision for a functional overhaul that worked within the framework of their technical backend and platform.</p>",
+		"results": "<p>The site (see from Brent?)</p>",
+		"capabilities": [
+			"Consumer & Business Insights (VOC)",
+			"Branding, Naming & Identity",
+			"Relational marketing"
+		],
+		"images": [
+			"nrccua1.jpg",
+			"nrccua2.jpg"	
+		]
+	}
+]
