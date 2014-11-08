@@ -1,24 +1,12 @@
 <?php
 require('../header.php');
-
-// Initialize keywords
-$first_keyword_array = array("ideas", "concepts", "initiatives");
-$second_keyword_array = array("click", "resonate", "thrive");
-
-// Get random index from the arrays
-$first_keyword_index = array_rand($first_keyword_array);
-$second_keyword_index = array_rand($second_keyword_array);
-
-// Assign keyword to variable
-$first_keyword = $first_keyword_array[$first_keyword_index];
-$second_keyword = $second_keyword_array[$second_keyword_index];
 ?>
 
 <div class="container-hwch-body">
 
 	<div class="top-bar">
 		<div class="container">
-			<h2>We bring <strong><?php echo $first_keyword; ?></strong> to life so they <strong><?php echo $second_keyword; ?></strong> with customers</h2>
+			<h2 id="mastKeywords">We bring <strong id="firstKeyword"></strong> to life so they <strong id="secondKeyword"></strong> with customers</h2>
 		</div>
 	</div>
 
@@ -110,7 +98,25 @@ $second_keyword = $second_keyword_array[$second_keyword_index];
 </div>
 
 <script>
-$(".menu li:nth-child(3) a").addClass("active-menu-item");
+    $(".menu li:nth-child(3) a").addClass("active-menu-item");
+
+    var first_keywords = ["ideas", "concepts", "initiatives"];
+    var second_keywords = ["click", "resonate", "thrive"];
+
+    $(function () {
+        var intervalID = setInterval(function () {
+            setRandomKeywords();
+        }, 10000);
+    });
+
+    function setRandomKeywords() {
+        var first_keyword = first_keywords[Math.floor(Math.random() * first_keywords.length)];
+        var second_keyword = second_keywords[Math.floor(Math.random() * second_keywords.length)];
+        $("#firstKeyword").html(first_keyword);
+        $("#secondKeyword").html(second_keyword);
+    }
+
+    setRandomKeywords();
 </script>
 
 <?php

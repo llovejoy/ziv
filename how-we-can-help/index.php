@@ -1,24 +1,12 @@
 <?php
 require('../header.php');
-
-// Initialize keywords
-$first_keyword_array = array("invent", "research", "explore", "build");
-$second_keyword_array = array("future", "plan", "scope", "solutions");
-
-// Get random index from the arrays
-$first_keyword_index = array_rand($first_keyword_array);
-$second_keyword_index = array_rand($second_keyword_array);
-
-// Assign keyword to variable
-$first_keyword = $first_keyword_array[$first_keyword_index];
-$second_keyword = $second_keyword_array[$second_keyword_index];
 ?>
 
 <div class="container-hwch-body">
 
 	<div class="top-bar">
 		<div class="container">
-			<h2>Let's <strong><?php echo $first_keyword; ?></strong> the <strong><?php echo $second_keyword; ?></strong> together.</h2>
+			<h2 id="mastKeywords">Let's <strong id="firstKeyword"></strong> the <strong id="secondKeyword"></strong> together.</h2>
 		</div>
 	</div>
 
@@ -126,13 +114,41 @@ $second_keyword = $second_keyword_array[$second_keyword_index];
 	</div>
 
 </div>
-
 <script>
-$(".menu li:nth-child(1) a").addClass("active-menu-item");
-    
-textFit($('.hwch-lead'), { multiLine : true, maxFontSize: 34})
-textFit($('.core-service-intro'), { multiLine : true, maxFontSize: 14})
-textFit($('.bordered-block'), { multiLine : true, maxFontSize: 20, minFontSize: 20, alignVert: true})
+    $(".menu li:nth-child(1) a").addClass("active-menu-item");
+
+    textFit($('.hwch-lead'), {
+        multiLine: true,
+        maxFontSize: 34
+    });
+    textFit($('.core-service-intro'), {
+        multiLine: true,
+        maxFontSize: 14
+    });
+    textFit($('.bordered-block'), {
+        multiLine: true,
+        maxFontSize: 20,
+        minFontSize: 20,
+        alignVert: true
+    });
+
+    var first_keywords = ["invent", "research", "explore", "build"];
+    var second_keywords = ["future", "plan", "scope", "solutions"];
+
+    $(function () {
+        var intervalID = setInterval(function () {
+            setRandomKeywords();
+        }, 10000);
+    });
+
+    function setRandomKeywords() {
+        var first_keyword = first_keywords[Math.floor(Math.random() * first_keywords.length)];
+        var second_keyword = second_keywords[Math.floor(Math.random() * second_keywords.length)];
+        $("#firstKeyword").html(first_keyword);
+        $("#secondKeyword").html(second_keyword);
+    }
+
+    setRandomKeywords();
 </script>
 
 <?php

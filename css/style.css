@@ -197,6 +197,11 @@ a {
     min-height: 80px;
 }
 
+#mastKeywords, #keywordOne {
+    transition: all 2s linear;
+}
+
+
 
 
 .results-body-header {

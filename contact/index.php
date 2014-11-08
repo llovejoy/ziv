@@ -1,21 +1,12 @@
 <?php 
-require( '../header.php'); 
-
-// Initialize keywords
-$first_keyword_array = array("hear from", "work with", "talk with");
-
-// Get random index from the arrays
-$first_keyword_index = array_rand($first_keyword_array);
-
-// Assign keyword to variable
-$first_keyword = $first_keyword_array[$first_keyword_index];
+require( '../header.php');
 ?>
 
 <div class="container-hwch-body">
 
 	<div class="top-bar">
 		<div class="container">
-			<h2>We'd love to <strong><?php echo $first_keyword; ?></strong> you.</h2>
+			<h2 id="mastKeywords">We'd love to <strong id="firstKeyword"></strong> you.</h2>
 		</div>
 	</div>
 	
@@ -88,6 +79,21 @@ $first_keyword = $first_keyword_array[$first_keyword_index];
 
 <script>
 	$(".menu li:nth-child(4) a").addClass("active-menu-item");
+    
+    var first_keywords = ["hear from", "work with", "talk with"];
+
+    $(function () {
+        var intervalID = setInterval(function () {
+            setRandomKeywords();
+        }, 10000);
+    });
+
+    function setRandomKeywords() {
+        var first_keyword = first_keywords[Math.floor(Math.random() * first_keywords.length)];
+        $("#firstKeyword").html(first_keyword);
+    }
+
+    setRandomKeywords();
 </script>
 
 <?php require( '../footer.php'); ?>
