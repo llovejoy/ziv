@@ -15,7 +15,7 @@ require('../header.php');
 	<br><br>
 
 	<div class="container">
-		<h3 class="hwch-lead">We work with innovative companies who understand that well crafted human experiences are good for business.</h3>
+		<h3 class="hwch-lead">We work with innovative companies who understand well crafted human experiences are good for business.</h3>
 	</div>
 	
 	<br><br>
@@ -24,19 +24,19 @@ require('../header.php');
 		<p>5 GOALS WE SEEK TO ACCOMPLISH WITH EVERY PROJECT</p>
 		
 		<h3 class="results-body-header">Communicate well</h3>
-		<p class="results-body-paragraph">So your customer can understand you, relate to you, share you and successfully accomplish any digital tasks.</p>
+		<p class="results-body-paragraph">So your customer can understand you, relate to you, share you, and successfully accomplish any digital tasks.</p>
 		
 		<h3 class="results-body-header">Stand out with excellence</h3>
-		<p class="results-body-paragraph">Be relevant to your customers. We connect the marketing and branding dots.</p>
+		<p class="results-body-paragraph">Be relevant to your customers- we'll connect the marketing and branding dots.</p>
 		
 		<h3 class="results-body-header">Leap frog the competition</h3>
-		<p class="results-body-paragraph">Innovate against your competitors and find your competitive advantage.</p>
+		<p class="results-body-paragraph">Innovate against your competitors to find your competitive advantage.</p>
 		
 		<h3 class="results-body-header">Set direction for the next stage of growth</h3>
-		<p class="results-body-paragraph">Your business can know how it should grow next, with a brilliant strategy.</p>
+		<p class="results-body-paragraph">Your business will know how it should grow next and with a brilliant strategy.</p>
 		
 		<h3 class="results-body-header">Expect exceptional results</h3>
-		<p class="results-body-paragraph">Your bottomline matters. We create for results (Execution).</p>
+		<p class="results-body-paragraph">Your bottomline matters- we create for results.</p>
 	</div>
 	
 	<br><br>
@@ -108,7 +108,7 @@ var currentIndex = 0;
     
 var resultData = null;
 var imageDirectory = "../img/results/"
-$(".menu li:nth-child(2) a").addClass("active-menu-item");
+$(".menu li:nth-child(3) a").addClass("active-menu-item");
 	
 // Get all the result data and place it into resultData variable, also replace the starting data with the first result
 $.getJSON('../js/results.json', function(data) {

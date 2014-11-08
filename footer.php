@@ -6,18 +6,18 @@
                     <div class="col-sm-4">
                         <strong>ABOUT US</strong>
                         <p>We're innovation thinkers ready to help grow your business by creating valuable customer experiences.</p>
-                        <a href="#" class="btn btn-lg btn-primary">LEARN MORE</a>
+                        <a href="<?php echo $dom;?>about" class="btn btn-lg btn-primary">LEARN MORE</a>
                     </div>
                     <div class="col-sm-4">
                         <strong>OUR WORK</strong>
                         <p>We translate your business goals into solutions that facilitate positive customer perceptions and relationships.</p>
-                        <a href="#" class="btn btn-lg btn-primary">SEE OUR WORK</a>
+                        <a href="<?php echo $dom;?>results" class="btn btn-lg btn-primary">SEE OUR WORK</a>
                     </div>
                     <div class="col-sm-4">
                         <strong>CONNECT</strong>
                         <p style="padding-bottom: 0px;">We'd love to hear from (and about) you! Let's meet and tweet!</p>
                         <p style="padding-top: 0px; padding-bottom: 0px;">+ 913 485-2352</p>
-                        <p style="padding-top: 0px; padding-bottom: 0px;"><img src="http://localhost/ziv/img/twitter.png" style="height: 14px;"> TWITTER &nbsp;&nbsp; <img src="http://localhost/ziv/img/linkedin.png" style="height: 14px;"> LINKEDIN</p>
+                        <p style="padding-top: 0px; padding-bottom: 0px; color: #BBBBBB !important;" class="connect"><a href="https://twitter.com/boxspringdesign" style="color: #BBBBBB !important;"><img src="http://localhost/ziv/img/twitter.png" style="height: 14px;"> TWITTER &nbsp;&nbsp; <a href="https://www.linkedin.com/company/boxspring-design" style="color: #BBBBBB !important;"><img src="http://localhost/ziv/img/linkedin.png" style="height: 14px;"> LINKEDIN</a></p>
                     </div>
 
                 </div>
@@ -52,6 +52,7 @@
 				$('.logo-img').addClass('smaller-logo');
 				$('.menu').removeClass('menu-bigger');
 				$('.menu').addClass('menu-smaller');
+                $(".menu-mobile-button").css("margin-top", "13px");
 			}
 		}
         else {
@@ -63,12 +64,18 @@
 				$('.logo-img').addClass('bigger-logo');
 				$('.menu').removeClass('menu-smaller');
 				$('.menu').addClass('menu-bigger');
+                $(".menu-mobile-button").css("margin-top", "0px");
 			}
 		}
 	});
     
     $(".menu-mobile-button").click(function() {
-        $(".menu-mobile").slideToggle();
+        $(".menu-mobile").fadeIn();
+    });
+    
+    $("#closeMobileMenuButton").click(function(e) {
+        e.preventDefault();
+         $(".menu-mobile").fadeOut();
     });
 </script>
 

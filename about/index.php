@@ -15,7 +15,7 @@ require('../header.php');
 	<br><br>
 
 	<div class="container">
-		<h3 class="hwch-lead">Hello, we're ZIV, a group of multi-national, multi-cultural, multi-talented individuals, anchored by our commitment to live exceptional lives and create extraordinary work and having an impact all over the world. Nice to meet you!</h3>
+		<h3 class="hwch-lead">Hello, we're ZIV, a group of multi-national, multi-cultural, and multi-talented individuals anchored by our commitment to live exceptional lives, create extraordinary work, and have an impact all over the world. Nice to meet you!</h3>
 	</div>
 	
 	<div class="container">
@@ -92,13 +92,13 @@ require('../header.php');
 
 	<div class="home-foot text-center">
 		<h3>Need to grow your reach?</h3>
-		<p>Great! We'd like to talk with you. <a href="#">Reach out to join our team.</a></p>
+		<p>Great! We'd like to talk with you. <a href="../contact/index.php">Reach out to join our team.</a></p>
 	</div>
 
 </div>
 
 <script>
-    $(".menu li:nth-child(3) a").addClass("active-menu-item");
+    $(".menu li:nth-child(4) a").addClass("active-menu-item");
 
     var first_keywords = ["ideas", "concepts", "initiatives"];
     var second_keywords = ["click", "resonate", "thrive"];

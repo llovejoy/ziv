@@ -15,7 +15,7 @@ require('../header.php');
 	<br><br>
 
 	<div class="container">
-		<h3 class="hwch-lead">We shine a light in a discovery phase and study your<br> business landscape. This research sparks innovation that we<br> synthesize into digital, branding or marketing solutions, that<br> are sustainable and profitable.</h3>
+		<h3 class="hwch-lead">We shine a light in a discovery phase and study your<br>business landscape. This research sparks innovation that we<br>synthesize into digital, branding, or marketing solutions that<br>are sustainable and profitable.</h3>
 	</div>
 
 	<br><br><br>
@@ -107,6 +107,14 @@ require('../header.php');
                 </div>
             </div>
         </div>
+    
+    <br><br>
+    
+    <div class="container">
+        <img src="../img/hwch-partner-clients.png" class="img-responsive">
+    </div>
+    
+    <br>
 
 	<div class="home-foot text-center">
 		<h3>Need a partner for your next initiative?</h3>
@@ -115,7 +123,7 @@ require('../header.php');
 
 </div>
 <script>
-    $(".menu li:nth-child(1) a").addClass("active-menu-item");
+    $(".menu li:nth-child(2) a").addClass("active-menu-item");
 
     textFit($('.hwch-lead'), {
         multiLine: true,

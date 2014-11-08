@@ -13,7 +13,7 @@ require( '../header.php');
 	<br>
 
 	<div class="container">
-		<h3 class="hwch-lead">We create products and build ideas that redefine markets, delight users and drive innovation. Looks like you are ready to talk about your next project.</h3>
+		<h3 class="hwch-lead">We create products and build ideas that redefine markets, delight users, and drive innovation. Looks like you're ready to talk about your next project!</h3>
 	</div>
 	
 	<br>
@@ -21,31 +21,38 @@ require( '../header.php');
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-7">
+                <div class="alert alert-success" role="alert" id="messageGood">Thank you for your message! We will be in contact with you shortly.</div>
+                <div class="alert alert-danger" role="alert" id="messageBad">An error occurred when processing your form.</div>
 				<form role="form">
 					<div class="form-group">
-						<label for="exampleInputEmail1">Name</label>
-						<input type="text" class="form-control" id="exampleInputEmail1">
+						<label for="ziv-name">Name</label>
+						<input type="text" class="form-control" id="ziv-name">
 					</div>
 					<div class="form-group">
-						<label for="exampleInputPassword1">Email</label>
-						<input type="text" class="form-control" id="exampleInputPassword1">
+						<label for="ziv-email">Email</label>
+						<input type="text" class="form-control" id="ziv-email">
 					</div>
 					<div class="form-group">
-						<label for="exampleInputFile">Subject</label>
-						<input type="text" class="form-control" id="exampleInputPassword1">
+						<label for="ziv-subject">Subject</label>
+						<input type="text" class="form-control" id="ziv-subject">
 					</div>
 					<div class="form-group">
-						<label for="exampleFormInputBlock">What can we do for you?</label>
-						<textarea class="form-control" rows="5"></textarea>
+						<label for="ziv-body">What can we do for you?</label>
+						<textarea class="form-control" rows="5" id="ziv-body"></textarea>
 					</div>
-					<button type="submit" class="btn btn-primary btn-lg" style="padding-left: 30px; padding-right: 30px;">SEND</button>
+                    <div class="form-group">
+						<label for="ziv-body">Security question: Is fire hot or cold?</label>
+						<input type="text" class="form-control" id="ziv-security">
+					</div>
+					<button type="button" class="btn btn-primary btn-lg" style="padding-left: 30px; padding-right: 30px;" id="ziv-submit">SEND</button>
 				</form>
 			</div>
 			<div class="col-sm-4 col-sm-offset-1">
 				<h4 class="contact-sidebar-header">You can find us here</h4>
 				<p class="contact-sidebar-paragraph">
 					<span class="contact-sidebar-place">Kansas City</span><br>
-					12460 S Gallery St<br>Olathe, Kansas 66062<br>
+                    8527 Bluejacket St<br>Lenexa, KS 66214<br>
+                    
 					<a class="contact-sidebar-link">Get Directions</a>
 				</p>
 				<p class="contact-sidebar-paragraph">
@@ -78,7 +85,7 @@ require( '../header.php');
 </div>
 
 <script>
-	$(".menu li:nth-child(4) a").addClass("active-menu-item");
+	$(".menu li:nth-child(5) a").addClass("active-menu-item");
     
     var first_keywords = ["hear from", "work with", "talk with"];
 
@@ -94,6 +101,60 @@ require( '../header.php');
     }
 
     setRandomKeywords();
+    
+    $("#ziv-submit").click(function(e) {
+        e.preventDefault();
+        
+        var name = $("#ziv-name").val();
+        var email = $("#ziv-email").val();
+        var subject = $("#ziv-subject").val();
+        var body = $("#ziv-body").val();
+        
+        if ( name.length > 0 && email.length > 0 && subject.length > 0 && body.length > 0)
+        {
+            if ($("#ziv-security").val() == "hot") {
+                $.ajax({
+                  type: "POST",
+                  url: "../processForm.php",
+                  data: { 
+                      name: name,
+                      email: email,
+                      subject: subject,
+                      body: body
+                  }
+                })
+                .done(function( msg ) {
+                    $("#messageBad").slideUp();
+                    $("#messageGood").slideDown();
+                    setTimeout(function(){
+                        $("#messageGood").slideUp();
+                    }, 8000);
+                    $("#ziv-name").val('');
+                    $("#ziv-email").val('');
+                    $("#ziv-subject").val('');
+                    $("#ziv-body").val('');
+                    $("#ziv-security").val('');
+                });
+            }
+            else {
+                $("#messageBad").html("Security question is incorrect.");
+                $("#messageBad").slideDown();
+                setTimeout(function(){
+                    $("#messageBad").slideUp();
+                }, 5000);
+            }
+        }
+        else {
+            $("#messageBad").html("All fields are required to submit.");
+            $("#messageBad").slideDown();
+            setTimeout(function(){
+                $("#messageBad").slideUp();
+            }, 5000);
+        }
+        
+        
+        
+    });
 </script>
 
 <?php require( '../footer.php'); ?>

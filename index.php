@@ -1,7 +1,7 @@
 <?php 
 	date_default_timezone_set( 'America/Chicago'); 
-	//$dom = "http://www.nathanfrancy.com/test/ziv/";
-	$dom = "http://localhost/ziv/";
+	$dom = "http://www.nathanfrancy.com/test/ziv/";
+	//$dom = "http://localhost/ziv/";
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -35,78 +35,58 @@
 	   <div class="container-header">
         
         <div class="menu-mobile">
-            <table class="menu-mobile-table">
-                <tr>
-                    <td><a href="<?php echo $dom; ?>how-we-can-help">how we can help</a> </td>
-                    <td><a href="<?php echo $dom; ?>results">results</a></td>
-                </tr>
-                <tr>
-                    <td><a href="<?php echo $dom; ?>about">about</a></td>
-                    <td><a href="<?php echo $dom; ?>contact">contact</a></td>
-                </tr>
-            </table>
+            <div class="row">
+                <div class="col-xs-8">
+                    <ul class="menu-mobile-list">
+                        <li><a href="<?php echo $dom; ?>">home</a></li>
+                        <li><a href="<?php echo $dom; ?>how-we-can-help">how we can help</a></li>
+                        <li><a href="<?php echo $dom; ?>results">results</a></li>
+                        <li><a href="<?php echo $dom; ?>about">about</a></li>
+                        <li><a href="<?php echo $dom; ?>contact">contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4">
+                    <br>
+                    <button type="button" class="btn btn-default" id="closeMobileMenuButton"><span class="glyphicon glyphicon-remove"></span> Close</button>
+                </div>
+            </div>
         </div>
            
 		<div class="container-menu">
-			<ul class="menu clearfix">
-				<li><a href="<?php echo $dom; ?>how-we-can-help">how we can help</a>
-				</li>
-				<li><a href="<?php echo $dom; ?>results">results</a>
-				</li>
-				<li><a href="<?php echo $dom; ?>about">about</a>
-				</li>
-				<li><a href="<?php echo $dom; ?>contact">contact</a>
-				</li>
-			</ul>
+			
             
 			<div class="container">
 				<a href="index.php">
-					<img src="<?php echo $dom; ?>img/logo.png" class="logo-img">
+					<img src="<?php echo $dom; ?>img/logo.png" class="logo-img bigger-logo">
 				</a>
+                <ul class="menu clearfix">
+                    <li><a href="<?php echo $dom; ?>" class="active-menu-item">home</a>
+                    </li>
+                    <li><a href="<?php echo $dom; ?>how-we-can-help">how we can help</a>
+                    </li>
+                    <li><a href="<?php echo $dom; ?>results">results</a>
+                    </li>
+                    <li><a href="<?php echo $dom; ?>about">about</a>
+                    </li>
+                    <li><a href="<?php echo $dom; ?>contact">contact</a>
+                    </li>
+                </ul>
 			</div>
             
             <div class="menu-mobile-button pull-right">
-                <button class="btn btn-default"><span class="glyphicon glyphicon-th-large"></span>&nbsp;Menu</button>
+                <button class="btn btn-default"><span class="glyphicon glyphicon-list"></span>&nbsp;Menu</button>
             </div>
             
             
 		</div>
 	</div>
-    
-    <style>
-        .menu-mobile {
-            display: none;
-            margin: 0px;
-            padding: 0px;
-            width: 100%;
-            z-index: 999;
-        }
-        
-        .menu-mobile-table {
-            width: 100%;
-            background-color: #0072B6;
-            color: white;
-            margin: 0px;
-            padding: 0px;
-        }
-        
-        .menu-mobile-table td {
-            width: 50%;
-            text-align: center;
-            color: white;
-        }
-        
-        .menu-mobile-table td a {
-            color: white;
-        }
-    </style>
-
 
 	<img src="img/home-photo.png" class="photo-offset">
 
 	<div class="container-home-body">
 		<div class="home-body-text container">
-			<p class="text-home-lead-body" style="">We offer experience innovation, inter-disciplinary<br>strategic, creative and technical skills that meet<br>today's marketing demands.</p>
+			<p class="text-home-lead-body" style="">
+                We offer experience innovation and inter-disciplinary<br>strategic creative and technical skills that meet<br>today's marketing demands.</p>
 			<br>
 			<p class="lead" style="font-size: 24px;">Whether, it's creating a brand or implementing a digital solution to disrupt your industry, transforming your customer's experience to gain loyalty, or executing a marketing strategy for needed growth - <strong>we've got you covered.</strong>
 			</p>
@@ -164,21 +144,21 @@
     </script>
     
     <style>
-    @media all and (min-width: 620px) {
+        @media all and (min-width: 650px) {
         .menu-mobile { display: none; }
     }
-        
-    @media all and (max-width: 620px) {
-        .menu { display: none;  }
-        .photo-offset {
-            top: 80px;
-        }
-        .text-home-lead-body, .lead, .home-sections, .polish, .home-blueorange-bar, .home-foot, .footer {
-            position: relative;
-            top: 80px;
-        }
-    }
-    </style>
 
+        @media all and (max-width: 650px) {
+            .menu { display: none;  }
+            .menu-mobile-button { display: block; }
+            .photo-offset {
+                top: 80px;
+            }
+            .text-home-lead-body, .lead, .home-sections, .polish, .home-blueorange-bar, .home-foot, .footer {
+                position: relative;
+                top: 80px;
+            }
+        }
+    </style>
 
 	<?php require( 'footer.php'); ?>

@@ -1,7 +1,7 @@
 <?php
 	date_default_timezone_set('America/Chicago');
-	//$dom = "http://www.nathanfrancy.com/test/ziv/";
-	$dom = "http://localhost/ziv/";
+	$dom = "http://www.nathanfrancy.com/test/ziv/";
+	//$dom = "http://localhost/ziv/";
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -31,17 +31,42 @@
     <body>
 		
 		<div class="container-header">
+            
+            <div class="menu-mobile">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <ul class="menu-mobile-list">
+                            <li><a href="<?php echo $dom; ?>">home</a></li>
+                            <li><a href="<?php echo $dom; ?>how-we-can-help">how we can help</a></li>
+                            <li><a href="<?php echo $dom; ?>results">results</a></li>
+                            <li><a href="<?php echo $dom; ?>about">about</a></li>
+                            <li><a href="<?php echo $dom; ?>contact">contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4">
+                        <br>
+                        <button type="button" class="btn btn-default" id="closeMobileMenuButton"><span class="glyphicon glyphicon-remove"></span> Close</button>
+                    </div>
+                </div>
+            </div>
+            
 			<div class="container-menu">
-				<ul class="menu clearfix">
-					<li><a href="<?php echo $dom; ?>how-we-can-help">how we can help</a></li>
-					<li><a href="<?php echo $dom; ?>results">results</a></li>
-					<li><a href="<?php echo $dom; ?>about">about</a></li>
-					<li><a href="<?php echo $dom; ?>contact">contact</a></li>
-				</ul>
+				
 				<div class="container">
 					<a href="<?php echo $dom; ?>index.php">
-						<img src="<?php echo $dom; ?>img/logo.png" class="logo-img">
+						<img src="<?php echo $dom; ?>img/logo.png" class="logo-img bigger-logo">
 					</a>
+                    <ul class="menu clearfix">
+                        <li><a href="<?php echo $dom; ?>">home</a></li>
+                        <li><a href="<?php echo $dom; ?>how-we-can-help">how we can help</a></li>
+                        <li><a href="<?php echo $dom; ?>results">results</a></li>
+                        <li><a href="<?php echo $dom; ?>about">about</a></li>
+                        <li><a href="<?php echo $dom; ?>contact">contact</a></li>
+                    </ul>
 				</div>
+                
+                <div class="menu-mobile-button pull-right">
+                    <button class="btn btn-default"><span class="glyphicon glyphicon-list"></span>&nbsp;Menu</button>
+                </div>
 			</div>
 		</div>
