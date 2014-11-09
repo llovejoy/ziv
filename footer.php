@@ -17,7 +17,7 @@
                         <strong>CONNECT</strong>
                         <p style="padding-bottom: 0px;">We'd love to hear from (and about) you! Let's meet and tweet!</p>
                         <p style="padding-top: 0px; padding-bottom: 0px;">+ 913 485-2352</p>
-                        <p style="padding-top: 0px; padding-bottom: 0px; color: #BBBBBB !important;" class="connect"><a href="https://twitter.com/boxspringdesign" style="color: #BBBBBB !important;"><img src="http://localhost/ziv/img/twitter.png" style="height: 14px;"> TWITTER &nbsp;&nbsp; <a href="https://www.linkedin.com/company/boxspring-design" style="color: #BBBBBB !important;"><img src="http://localhost/ziv/img/linkedin.png" style="height: 14px;"> LINKEDIN</a></p>
+                        <p style="padding-top: 0px; padding-bottom: 0px; color: #BBBBBB !important;" class="connect"><a href="https://twitter.com/boxspringdesign" style="color: #BBBBBB !important;"><img src="<?php echo $dom; ?>img/twitter.png" style="height: 14px;"> TWITTER &nbsp;&nbsp; <a href="https://www.linkedin.com/company/boxspring-design" style="color: #BBBBBB !important;"><img src="<?php echo $dom; ?>img/linkedin.png" style="height: 14px;"> LINKEDIN</a></p>
                     </div>
 
                 </div>

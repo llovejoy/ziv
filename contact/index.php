@@ -74,8 +74,27 @@ require( '../header.php');
 				<hr class="contact-sidebar-hr">
 				
 				<h4 class="contact-sidebar-header">Keep informed on all things ZIV</h4>
-				<input type="text" class="form-control"><br>
-				<button type="submit" class="btn btn-lg" style="color: white; padding-left: 30px; padding-right: 30px;">SIGN UP</button>
+				
+				<!-- Begin MailChimp Signup Form -->
+				<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+				<style type="text/css">
+					#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+					/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+					   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+				</style>
+				<div id="mc_embed_signup">
+				<form action="//noteroo.us5.list-manage.com/subscribe/post?u=5577102d1725680a86547940e&amp;id=03a490def2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" style="padding: 0px;" novalidate>
+					<div id="mc_embed_signup_scroll">
+					<input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="email address" required>
+					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					<div style="position: absolute; left: -5000px;"><input type="text" name="b_5577102d1725680a86547940e_03a490def2" tabindex="-1" value=""></div>
+						<br>
+					<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg" style="color: white; padding-right: 30px;"></div>
+					</div>
+				</form>
+				</div>
+
+				<!--End mc_embed_signup-->
 			</div>
 		</div>
 	</div>
