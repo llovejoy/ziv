@@ -135,7 +135,7 @@ require('../header.php');
 
 	<div class="home-foot text-center">
 		<h3>Need a partner for your next initiative?</h3>
-		<p>Let's talk. <a href="#">Connect with us.</a></p>
+		<p>Let's talk. <a href="<?php echo $dom; ?>contact">Connect with us.</a></p>
 	</div>
 
 </div>
