@@ -434,6 +434,13 @@ input {
 	font-size: 0.9em;
 }
 
+@media all and (max-width: 769px) {
+	.foot-cont {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
 .copyright {
 	padding-top: 20px;
 }

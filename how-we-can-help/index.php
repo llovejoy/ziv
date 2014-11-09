@@ -19,14 +19,30 @@ require('../header.php');
 	</div>
 
 	<br><br><br>
+	
+	<style>
+		
+		@media all and (max-width: 991px) {
+			.blocks div {
+				float: none !important;
+				width: 100% !important;
+				max-width: 100% !important;
+				border: 0px white solid !important;
+			}
+			#breaker {
+				height: 0px !important;
+			}
+		}
+		
+	</style>
 
     <p class="cap-subtitle">CORE SERVICES</p>
     <div style="background-color: #F6F6F6; width: 100%; max-width: 100%;">
         <div class="container-fluid grey-blocks">
             <div class="row">
-                <div class="container">
+                <div class="container blocks">
                     
-                    <div class="col-sm-6" style="border-right: 5px white solid;">
+                    <div id="core1" class="col-md-6" style="border-right: 5px white solid;">
                         <h3 class="column-header">Innovation and Branding</h3>
                         <p class="core-service-intro">Facilitating the entire process to ensure truly<br>breakthrough and disruptive outcomes.</p>
                         <ul>
@@ -36,9 +52,10 @@ require('../header.php');
                             <li>Manufacturing</li>
                             <li>Brand and collateral design</li>
                         </ul>
+						
                     </div>
                    
-                    <div class="col-sm-6" style="border-left: 5px white solid;">
+                    <div id="core2" class="col-md-6" style="border-left: 5px white solid;">
                         <h3 class="column-header">Experience Design</h3>
                         <p class="core-service-intro">Experiences for your customers that grows<br>your business and a loyal consumer base.</p>
                         <ul>
@@ -52,10 +69,10 @@ require('../header.php');
                     </div>
                 </div>
             </div>
-             <div style="position: absolute;left: 0; width: 100%; height: 10px; background-color: white;"></div>
+             <div id="breaker" style="position: absolute;left: 0; width: 100%; height: 10px; background-color: white;"></div>
             <div class="row" class="padding-top: 0px !important;">
-                <div class="container">
-                    <div class="col-sm-6" style="border-right: 5px white solid;">
+                <div class="container blocks">
+                    <div id="core3" class="col-md-6" style="border-right: 5px white solid;">
                         <h3 class="column-header">Strategic Consulting</h3>
                         <p class="core-service-intro">The right growth in the right direction with the<br>ability to pivot in an evolving market.</p>
                         <ul>
@@ -64,7 +81,7 @@ require('../header.php');
                             <li>Business Strategy</li>
                         </ul>
                     </div>
-                        <div class="col-sm-6" style="border-left: 5px white solid;">
+                        <div id="core4" class="col-md-6" style="border-left: 5px white solid;">
                             <h3 class="column-header">Relational Marketing</h3>
                             <p class="core-service-intro">Making sure every touchpoint works to<br>retain the customer.</p>
                             <ul>
@@ -155,6 +172,12 @@ require('../header.php');
         $("#firstKeyword").html(first_keyword);
         $("#secondKeyword").html(second_keyword);
     }
+	
+	var highestCol = Math.max($('#core1').height(),$('#core2').height());
+	$('#core1, #core2').height(highestCol);
+	
+	var highestCol2 = Math.max($('#core3').height(),$('#core4').height());
+	$('#core3, #core4').height(highestCol);
 
     setRandomKeywords();
 </script>
