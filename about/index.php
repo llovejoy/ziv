@@ -22,9 +22,9 @@ require('../header.php');
 		<h3 class="about-header" style="margin-bottom: 30px; margin-top: 45px;">Meet your team</h3>
 		<div class="row">
 			<div class="col-sm-3">
-				<img src="#" class="img-responsive about-team-image"><br>
+				<img src="<?php echo $dom; ?>img/profiles/cara.jpg" class="img-responsive"><br>
 				<h4 class="about-team-name">
-					<a href="#">
+					<a href="https://www.linkedin.com/in/ricardamiller">
 						<img src="../img/linkedin2.png" style="float: right;">
 					</a>
 					Cara Miller<br>
@@ -32,9 +32,9 @@ require('../header.php');
 				</h4>
 			</div>
 			<div class="col-sm-3">
-				<img src="#" class="img-responsive about-team-image"><br>
+				<img src="<?php echo $dom; ?>img/profiles/lyssa.jpg" class="img-responsive"><br>
 				<h4 class="about-team-name">
-					<a href="#">
+					<a href="https://www.linkedin.com/pub/lyssa-surface/7/4a6/ba9">
 						<img src="../img/linkedin2.png" style="float: right;">
 					</a>
 					Lyssa Surface<br>
@@ -42,9 +42,9 @@ require('../header.php');
 				</h4>
 			</div>
 			<div class="col-sm-3">
-				<img src="#" class="img-responsive about-team-image"><br>
+				<img src="<?php echo $dom; ?>img/profiles/deann.jpg" class="img-responsive"><br>
 				<h4 class="about-team-name">
-					<a href="#">
+					<a href="https://www.linkedin.com/pub/deann-garrett/82/3b8/53">
 						<img src="../img/linkedin2.png" style="float: right;">
 					</a>
 					DeAnn Garret<br>
@@ -52,9 +52,9 @@ require('../header.php');
 				</h4>
 			</div>
 			<div class="col-sm-3">
-				<img src="#" class="img-responsive about-team-image"><br>
+				<img src="<?php echo $dom; ?>img/profiles/lindsay.jpg" class="img-responsive"><br>
 				<h4 class="about-team-name">
-					<a href="#">
+					<a href="https://www.linkedin.com/pub/lindsay-lovejoy/98/b29/63">
 						<img src="../img/linkedin2.png" style="float: right;">
 					</a>
 					Lindsay Lovejoy<br>

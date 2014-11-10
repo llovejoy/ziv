@@ -132,7 +132,7 @@
 
 		<div class="home-foot text-center">
 			<h3>How can we help you?</h3>
-			<p>We're happy to have a conversation. <a href="#">Connect with us.</a>
+			<p>We're happy to have a conversation. <a href="<?php echo $dom; ?>contact">Connect with us.</a>
 			</p>
 		</div>
 
