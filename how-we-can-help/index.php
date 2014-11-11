@@ -163,6 +163,7 @@ require('../header.php');
         alignVert: true
     });
 
+    // Initialize pool of words taken, plant the first round on the page
     var first_keywords = ["invent", "research", "explore", "build"];
     var second_keywords = ["future", "plan", "scope", "solutions"];
 	var first_keyword = first_keywords[Math.floor(Math.random() * first_keywords.length)];
@@ -170,13 +171,19 @@ require('../header.php');
 	$("#firstKeyword").html(first_keyword);
 	$("#secondKeyword").html(second_keyword);
 
-    var si = setInterval(setRandomKeywords, 12000);
-    
+    /* Set a timer of 2 seconds to set firstRound to true
+       Fixes the first round bug and will only change AFTER
+       12 seconds now */
     var firstRound = false;
     setTimeout(function(){
         firstRound = true;
     }, 2000);
 
+    // Fire setRandomKeywords every 12 seconds
+    var si = setInterval(setRandomKeywords, 12000);
+
+    /* Fired from above ^ every 12 seconds
+       Will get two random words from the word pools and will fade in and fade out */
     function setRandomKeywords() {
         if (firstRound == true) {
             setTimeout(function(){
@@ -190,6 +197,7 @@ require('../header.php');
         }
     }
 	
+    // Fix the grey blocks to always match each other in size
 	var highestCol = Math.max($('#core1').height(),$('#core2').height());
 	$('#core1, #core2').height(highestCol);
 	
