@@ -92,7 +92,7 @@ require('../header.php');
 
 	<div class="home-foot text-center">
 		<h3>Need to grow your reach?</h3>
-		<p>Great! We'd like to talk with you. <a href="../contact/index.php">Reach out to join our team.</a></p>
+		<p class="call-to-action-body">Great! We'd like to talk with you. <a href="../contact/index.php">Reach out to join our team.</a></p>
 	</div>
 
 </div>

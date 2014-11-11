@@ -73,7 +73,7 @@ require( '../header.php');
 				
 				<hr class="contact-sidebar-hr">
 				
-				<h4 class="contact-sidebar-header">Keep informed on all things ZIV</h4>
+				<h4 class="contact-sidebar-header">Stay informed on all things ZIV</h4>
 				
 				<!-- Begin MailChimp Signup Form -->
 				<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">

@@ -106,7 +106,7 @@
 				</div>
 			</div>
 			<br>
-			<h2 class="polish text-center" style="font-size: 34.5px; color: #444444;">Because every business could use a polish/boost.</h2>
+			<h2 class="polish text-center" style="font-size: 34.5px; color: #444444;">Because every business could use a polish.</h2>
 			<br>
 			<br>
 		</div>
@@ -114,15 +114,15 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-5">
-						<h1 style="font-size: 45px;">Being said...</h1>
-						<p style="font-size: 23px;">The lowdown on emotional branding ow.ly/zvozU
-							<br><small>Aug 13</small>
+						<h1 style="font-size: 35px;">Being said...</h1>
+						<p style="font-size: 23px;">The lowdown on emotional branding <a href="ow.ly/zvozU" style="color: white;">ow.ly/zvozU</a>
+							<br><small style="font-size: 14px;">Aug 13</small>
 						</p>
 					</div>
 					<div class="col-sm-5 col-sm-offset-2">
-						<h1 style="font-size: 45px;">What we're up to</h1>
+						<h1 style="font-size: 35px;">What we're up to</h1>
 						<p style="font-size: 23px;">Our startup client hit their 3 month projection out of the gate.
-							<br><small>Aug 13</small>
+							<br><small style="font-size: 14px;">Aug 13</small>
 						</p>
 					</div>
 				</div>
@@ -131,8 +131,8 @@
 		</div>
 
 		<div class="home-foot text-center">
-			<h3>How can we help you?</h3>
-			<p>We're happy to have a conversation. <a href="<?php echo $dom; ?>contact">Connect with us.</a>
+			<h3 class="call-to-action-header">How can we help you?</h3>
+			<p class="call-to-action-body">We're happy to have a conversation. <a href="<?php echo $dom; ?>contact">Connect with us.</a>
 			</p>
 		</div>
 

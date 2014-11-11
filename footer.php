@@ -26,14 +26,16 @@
                     <!-- copyright -->
                     <div class="copyright">
                         &copy;
-                        <?php echo date( 'Y'); ?> Copyright ZIV Inc. | <a href="<?php echo $dom; ?>terms">Terms</a>
+                        <?php echo date( 'Y'); ?> Copyright ZIV Inc.
                     </div>
                     <!-- /copyright -->
                 </div>
                 
             </div>
-
 		</footer>
+		<div class="container" style="margin-top: 5px; margin-bottom: 5px;">
+			<a href="<?php echo $dom; ?>terms">Terms</a>
+		</div>
 
 	</body>
 

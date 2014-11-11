@@ -15,13 +15,13 @@ require('../header.php');
 	<br><br>
 
 	<div class="container">
-		<h3 class="hwch-lead">We work with innovative companies who understand well crafted human experiences are good for business.</h3>
+		<h3 class="hwch-lead">We work with innovative companies who understand that well crafted human experiences are good for business.</h3>
 	</div>
 	
 	<br><br>
 	
 	<div class="container">
-		<p>5 GOALS WE SEEK TO ACCOMPLISH WITH EVERY PROJECT</p>
+		<p style="font-size: 26px;">5 GOALS WE SEEK TO ACCOMPLISH WITH EVERY PROJECT</p>
 		
 		<h3 class="results-body-header">Communicate well</h3>
 		<p class="results-body-paragraph">So your customer can understand you, relate to you, share you, and successfully accomplish any digital tasks.</p>
@@ -70,7 +70,7 @@ require('../header.php');
 				<div class="slider-pagination">
                     <center>
                         <img id="slider-pag-backward" src="../img/arrow_left_lblue.png">&nbsp;
-                        <span id="slider-pag-number">1</span>&nbsp;
+                        <span id="slider-pag-number"></span>&nbsp;
                         <img id="slider-pag-forward" src="../img/arrow_right_lblue.png">
                     </center>
 				</div>
@@ -96,7 +96,7 @@ require('../header.php');
 
 	<div class="home-foot text-center">
 		<h3>Looking for results?</h3>
-		<p>Explore our capabilities and see <a href="#">what we do.</a></p>
+		<p class="call-to-action-body">Explore our capabilities and see <a href="#">what we do.</a></p>
 	</div>
 
 </div>
@@ -143,17 +143,25 @@ function switchResult(id) {
 	
 	// Replace image with first pertinent image available
 	$("#slider-current-img").attr("src", imageDirectory + resultData[id].images[0]);
+	
 	if (resultData[id].images.length > 1) {
 		$("#slider-pag-forward").attr("src", "../img/arrow_right_blue.png");
 	}
+	
+	var paginationNumbers = "<span class='pag-number pag-active' pag-number='1'>1&nbsp;</span>";
+	for (var i = 2; i < resultData[id].images.length+1; i++) {
+		paginationNumbers += "<span class='pag-number' pag-number='"+ i +"'>" + i + "</span>&nbsp;";
+	}
     replaceArrows();
-    $("#slider-pag-number").html(currentPag);
+	
+	$("#slider-pag-number").html(paginationNumbers);
 }
   
 $(document).on("click", "#slider-pag-forward", function() {
     if (currentPag != currentPagLength) {
         currentPag += 1;
-        $("#slider-pag-number").html(currentPag);
+		$(".pag-active").removeClass("pag-active");
+        $(".pag-number[pag-number="+ currentPag +"]").addClass("pag-active");
         $("#slider-current-img").attr("src", imageDirectory + resultData[currentIndex].images[currentPag-1]);
         replaceArrows();
     }
@@ -162,10 +170,20 @@ $(document).on("click", "#slider-pag-forward", function() {
 $(document).on("click", "#slider-pag-backward", function() {
     if (currentPag != 1) {
         currentPag -= 1;
-        $("#slider-pag-number").html(currentPag);
+		$(".pag-active").removeClass("pag-active");
+        $(".pag-number[pag-number="+ currentPag +"]").addClass("pag-active");
         $("#slider-current-img").attr("src", imageDirectory + resultData[currentIndex].images[currentPag-1]);
         replaceArrows();
     }
+});
+	
+$(document).on("click", ".pag-number", function() {
+	var id = parseInt($(this).html());
+	currentPag = id;
+	$(".pag-active").removeClass("pag-active");
+    $(".pag-number[pag-number="+ currentPag +"]").addClass("pag-active");
+    $("#slider-current-img").attr("src", imageDirectory + resultData[currentIndex].images[currentPag-1]);
+    replaceArrows();
 });
     
 function replaceArrows() {

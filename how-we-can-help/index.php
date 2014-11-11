@@ -20,22 +20,6 @@ require('../header.php');
 
 	<br><br><br>
 	
-	<style>
-		
-		@media all and (max-width: 991px) {
-			.blocks div {
-				float: none !important;
-				width: 100% !important;
-				max-width: 100% !important;
-				border: 0px white solid !important;
-			}
-			#breaker {
-				height: 0px !important;
-			}
-		}
-		
-	</style>
-
     <p class="cap-subtitle">CORE SERVICES</p>
     <div style="background-color: #F6F6F6; width: 100%; max-width: 100%;">
         <div class="container-fluid grey-blocks">
@@ -54,8 +38,7 @@ require('../header.php');
                         </ul>
 						
                     </div>
-                   
-                    <div id="core2" class="col-md-6" style="border-left: 5px white solid;">
+                    <div id="core2" class="col-md-6" style="border-left: 5px white solid; padding-left: 70px;">
                         <h3 class="column-header">Experience Design</h3>
                         <p class="core-service-intro">Experiences for your customers that grows<br>your business and a loyal consumer base.</p>
                         <ul>
@@ -81,7 +64,7 @@ require('../header.php');
                             <li>Business Strategy</li>
                         </ul>
                     </div>
-                        <div id="core4" class="col-md-6" style="border-left: 5px white solid;">
+                        <div id="core4" class="col-md-6" style="border-left: 5px white solid; padding-left: 70px;">
                             <h3 class="column-header">Relational Marketing</h3>
                             <p class="core-service-intro">Making sure every touchpoint works to<br>retain the customer.</p>
                             <ul>
@@ -127,15 +110,38 @@ require('../header.php');
     
     <br><br>
     
+	<!--
     <div class="container">
         <img src="../img/hwch-partner-clients.png" class="img-responsive">
     </div>
+	-->
+	
+	<div class="container-fluid" style="background-image: url(../img/blue-bar.jpg); background-repeat: no-repeat;">
+		<div class="container" id="hwp-women" style="background-image: url(../img/how-we-partner.png); background-repeat: no-repeat; background-size: contain; max-height: 350px; height: 350px;">
+			<div class="row">
+				<div class="col-sm-5">
+				</div>
+				<div class="col-sm-7">
+					<h4 class="hwp-head">How we partner with our clients</h4>
+					<ul class="hwp-list">
+						<li>Support internal teams or agency staff</li>
+						<li>As an outsourced UX team</li>
+						<li>Guide new product initiatives or major re-designs</li>
+						<li>Provide innovation research, strategy and ideation</li>
+						<li>Provide a roadmap and set the vision for the future</li>
+						<li>Strategize opportunities for company and market growth</li>
+						<li>Collaborate to refresh branding, marketing and bring to market strategies</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
     
     <br>
 
 	<div class="home-foot text-center">
 		<h3>Need a partner for your next initiative?</h3>
-		<p>Let's talk. <a href="<?php echo $dom; ?>contact">Connect with us.</a></p>
+		<p class="call-to-action-body">Let's talk. <a href="<?php echo $dom; ?>contact">Connect with us.</a></p>
 	</div>
 
 </div>
@@ -169,7 +175,7 @@ require('../header.php');
     function setRandomKeywords() {
         var first_keyword = first_keywords[Math.floor(Math.random() * first_keywords.length)];
         var second_keyword = second_keywords[Math.floor(Math.random() * second_keywords.length)];
-        $("#firstKeyword").html(first_keyword);
+		$("#firstKeyword").html(first_keyword);
         $("#secondKeyword").html(second_keyword);
     }
 	
