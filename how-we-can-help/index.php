@@ -170,19 +170,24 @@ require('../header.php');
 	$("#firstKeyword").html(first_keyword);
 	$("#secondKeyword").html(second_keyword);
 
-    setInterval(function () {
-    	setRandomKeywords();
-    }, 12000);
+    var si = setInterval(setRandomKeywords, 12000);
+    
+    var firstRound = false;
+    setTimeout(function(){
+        firstRound = true;
+    }, 2000);
 
     function setRandomKeywords() {
-		$("#mastKeywords").addClass("fade");
-		setTimeout(function(){
-			first_keyword = first_keywords[Math.floor(Math.random() * first_keywords.length)];
-        	second_keyword = second_keywords[Math.floor(Math.random() * second_keywords.length)];
-			$("#firstKeyword").html(first_keyword);
-			$("#secondKeyword").html(second_keyword);
-			$("#mastKeywords").removeClass("fade");
-		}, 2500);
+        if (firstRound == true) {
+            setTimeout(function(){
+                first_keyword = first_keywords[Math.floor(Math.random() * first_keywords.length)];
+                second_keyword = second_keywords[Math.floor(Math.random() * second_keywords.length)];
+                $("#firstKeyword").html(first_keyword);
+                $("#secondKeyword").html(second_keyword);
+                $("#mastKeywords").removeClass("fade");
+            }, 2000);
+            $("#mastKeywords").addClass("fade");
+        }
     }
 	
 	var highestCol = Math.max($('#core1').height(),$('#core2').height());

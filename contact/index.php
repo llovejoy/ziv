@@ -69,7 +69,7 @@ require( '../header.php');
 				<hr class="contact-sidebar-hr">
 				
 				<h4 class="contact-sidebar-header">Email</h4>
-				<p class="contact-sidebar-paragraph">info@zivinc.com</p>
+				<p class="contact-sidebar-paragraph">info@letsziv.com</p>
 				
 				<hr class="contact-sidebar-hr">
 				
