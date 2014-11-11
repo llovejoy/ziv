@@ -165,18 +165,24 @@ require('../header.php');
 
     var first_keywords = ["invent", "research", "explore", "build"];
     var second_keywords = ["future", "plan", "scope", "solutions"];
+	var first_keyword = first_keywords[Math.floor(Math.random() * first_keywords.length)];
+    var second_keyword = second_keywords[Math.floor(Math.random() * second_keywords.length)];
+	$("#firstKeyword").html(first_keyword);
+	$("#secondKeyword").html(second_keyword);
 
-    $(function () {
-        var intervalID = setInterval(function () {
-            setRandomKeywords();
-        }, 10000);
-    });
+    setInterval(function () {
+    	setRandomKeywords();
+    }, 12000);
 
     function setRandomKeywords() {
-        var first_keyword = first_keywords[Math.floor(Math.random() * first_keywords.length)];
-        var second_keyword = second_keywords[Math.floor(Math.random() * second_keywords.length)];
-		$("#firstKeyword").html(first_keyword);
-        $("#secondKeyword").html(second_keyword);
+		$("#mastKeywords").addClass("fade");
+		setTimeout(function(){
+			first_keyword = first_keywords[Math.floor(Math.random() * first_keywords.length)];
+        	second_keyword = second_keywords[Math.floor(Math.random() * second_keywords.length)];
+			$("#firstKeyword").html(first_keyword);
+			$("#secondKeyword").html(second_keyword);
+			$("#mastKeywords").removeClass("fade");
+		}, 2500);
     }
 	
 	var highestCol = Math.max($('#core1').height(),$('#core2').height());

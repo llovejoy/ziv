@@ -33,7 +33,11 @@ a {
 }
 
 #mastKeywords {
-	transition: all 0.5s ease-in-out;
+	transition: all 0.05s linear;
+}
+
+.fade {
+	opacity: 0;
 }
 
 .photo-full-size {
@@ -331,7 +335,7 @@ a {
 	background-color: #F57D2F;
     background-image: url(../img/quotes.jpg);
     background-position: center center;
-    //background-size: contain;
+    background-size: contain;
     background-repeat: no-repeat;
 	color: white;
 }
