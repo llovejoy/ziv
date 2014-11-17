@@ -107,18 +107,33 @@ require( '../header.php');
 	$(".menu li:nth-child(5) a").addClass("active-menu-item");
     
     var first_keywords = ["hear from", "work with", "talk with"];
+    var first_keyword = first_keywords[Math.floor(Math.random() * first_keywords.length)];
+	$("#firstKeyword").html(first_keyword);
 
-    $(function () {
-        var intervalID = setInterval(function () {
-            setRandomKeywords();
-        }, 10000);
-    });
+    /* Set a timer of 2 seconds to set firstRound to true
+       Fixes the first round bug and will only change AFTER
+       12 seconds now */
+    var firstRound = false;
+    setTimeout(function(){
+        firstRound = true;
+    }, 2000);
 
+    // Fire setRandomKeywords every 12 seconds
+    var si = setInterval(setRandomKeywords, 12000);
+
+    /* Fired from above ^ every 12 seconds
+       Will get two random words from the word pools and will fade in and fade out */
     function setRandomKeywords() {
-        var first_keyword = first_keywords[Math.floor(Math.random() * first_keywords.length)];
-        $("#firstKeyword").html(first_keyword);
+        if (firstRound == true) {
+            setTimeout(function(){
+                first_keyword = first_keywords[Math.floor(Math.random() * first_keywords.length)];
+                $("#firstKeyword").html(first_keyword);
+                $("#mastKeywords").removeClass("fade");
+            }, 2000);
+            $("#mastKeywords").addClass("fade");
+        }
     }
-
+    
     setRandomKeywords();
     
     $("#ziv-submit").click(function(e) {

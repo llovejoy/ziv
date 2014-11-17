@@ -1,7 +1,7 @@
 <?php
 	date_default_timezone_set('America/Chicago');
-	//$dom = "http://www.nathanfrancy.com/test/ziv/";
-	$dom = "http://ziv.local/";
+	$dom = "http://www.nathanfrancy.com/test/ziv/";
+	//$dom = "http://ziv.local/";
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->

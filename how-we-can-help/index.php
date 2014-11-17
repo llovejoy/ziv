@@ -196,6 +196,8 @@ require('../header.php');
             $("#mastKeywords").addClass("fade");
         }
     }
+    
+    setRandomKeywords();
 	
     // Fix the grey blocks to always match each other in size
 	var highestCol = Math.max($('#core1').height(),$('#core2').height());
@@ -203,8 +205,6 @@ require('../header.php');
 	
 	var highestCol2 = Math.max($('#core3').height(),$('#core4').height());
 	$('#core3, #core4').height(highestCol);
-
-    setRandomKeywords();
 </script>
 
 <?php

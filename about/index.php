@@ -79,8 +79,9 @@ require('../header.php');
 		</div>
 	</div>
 	
-	<br><br><br>
+	<br><br>
 	
+    <!--
 	<div class="container">
 		<p class="cap-subtitle">WHY WE DO WHAT WE DO</p>
 		<h3 class="about-header">70% of the 1.6 billion people living in extreme poverty are women. We give back by investing in disadvantaged women so they are empowered to change the world.</h3>
@@ -89,9 +90,40 @@ require('../header.php');
 	<br><br><br>
 	
 	<img src="../img/about-infographic.png" class="img-responsive">
+    -->
+    
+    <div class="container">
+        <p class="cap-subtitle">WHY WE DO WHAT WE DO</p>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <p class="why-lead">Only 3% of creative<br>directors are women yet<br>women make 85% of the<br>buying decisions</p>
+                <p class="why-body">Female consumers were asked if brands understood them - 
+90% said no. We bring a refreshing perspective to connecting with your customers.</p>
+            </div>
+            <div class="col-sm-4">
+                <p class="why-lead">Children’s needs, childcare<br>costs, lack of flexibility, no<br>part-time options often<br>push women out of careers.</p>
+                <p class="why-body">Given women’s desire to stay in their career we offer an alternative to the demands of corporate america and traditional agency work life balance.</p>
+            </div>
+            <div class="col-sm-4">
+                <p class="why-lead">Women make up 70% of<br>the 1.6 billion people in<br>the world living in<br>extreme poverty.</p>
+                <p class="why-body">In developing countries when women earn more, they spend it on their families, decreasing poverty generationally. We give back to organizations who transform women economically.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <center>
+                    <br>
+                    <a href="#"><img src="../img/worldvision.png" class="why-logo img-responsive"></a>&nbsp;
+                    <a href="#"><img src="../img/womensemployment.png" class="why-logo img-responsive"></a>
+                </center>
+                <br><br>
+            </div>
+        </div>
+    </div>
 
-	<div class="home-foot text-center">
-		<h3>Need to grow your reach?</h3>
+	<div class="home-foot text-center" style="background-color: #ebebeb;">
+		<h3>Want to make a difference?</h3>
 		<p class="call-to-action-body">Great! We'd like to talk with you. <a href="../contact/index.php">Reach out to join our team.</a></p>
 	</div>
 
@@ -102,20 +134,37 @@ require('../header.php');
 
     var first_keywords = ["ideas", "concepts", "initiatives"];
     var second_keywords = ["click", "resonate", "thrive"];
+var first_keyword = first_keywords[Math.floor(Math.random() * first_keywords.length)];
+    var second_keyword = second_keywords[Math.floor(Math.random() * second_keywords.length)];
+	$("#firstKeyword").html(first_keyword);
+	$("#secondKeyword").html(second_keyword);
 
-    $(function () {
-        var intervalID = setInterval(function () {
-            setRandomKeywords();
-        }, 10000);
-    });
+    /* Set a timer of 2 seconds to set firstRound to true
+       Fixes the first round bug and will only change AFTER
+       12 seconds now */
+    var firstRound = false;
+    setTimeout(function(){
+        firstRound = true;
+    }, 2000);
 
+    // Fire setRandomKeywords every 12 seconds
+    var si = setInterval(setRandomKeywords, 12000);
+
+    /* Fired from above ^ every 12 seconds
+       Will get two random words from the word pools and will fade in and fade out */
     function setRandomKeywords() {
-        var first_keyword = first_keywords[Math.floor(Math.random() * first_keywords.length)];
-        var second_keyword = second_keywords[Math.floor(Math.random() * second_keywords.length)];
-        $("#firstKeyword").html(first_keyword);
-        $("#secondKeyword").html(second_keyword);
+        if (firstRound == true) {
+            setTimeout(function(){
+                first_keyword = first_keywords[Math.floor(Math.random() * first_keywords.length)];
+                second_keyword = second_keywords[Math.floor(Math.random() * second_keywords.length)];
+                $("#firstKeyword").html(first_keyword);
+                $("#secondKeyword").html(second_keyword);
+                $("#mastKeywords").removeClass("fade");
+            }, 2000);
+            $("#mastKeywords").addClass("fade");
+        }
     }
-
+    
     setRandomKeywords();
 </script>
 

@@ -1,7 +1,7 @@
 <?php 
 	date_default_timezone_set('America/Chicago'); 
-	//$dom = "http://www.nathanfrancy.com/test/ziv/";
-    $dom = "http://ziv.local/";
+	$dom = "http://www.nathanfrancy.com/test/ziv/";
+    //$dom = "http://ziv.local/";
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -14,12 +14,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<title>ZIV</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -115,7 +112,7 @@
 				<div class="row">
 					<div class="col-sm-5">
 						<h1 style="font-size: 35px;">Being said...</h1>
-						<p style="font-size: 23px;">The lowdown on emotional branding <a href="ow.ly/zvozU" style="color: white;">ow.ly/zvozU</a>
+						<p style="font-size: 23px;">The lowdown on emotional branding <a href="http://ow.ly/zvozU" style="color: white;">ow.ly/zvozU</a>
 							<br><small style="font-size: 14px;">Aug 13</small>
 						</p>
 					</div>
