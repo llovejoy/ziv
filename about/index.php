@@ -99,7 +99,7 @@ require('../header.php');
             <div class="col-sm-4">
                 <p class="why-lead">Only 3% of creative<br>directors are women yet<br>women make 85% of the<br>buying decisions</p>
                 <p class="why-body">Female consumers were asked if brands understood them - 
-90% said no. We bring a refreshing perspective to connecting with your customers.</p>
+<a href="http://www.fastcompany.com/3006255/where-are-all-women-creative-directors">90% said no</a>. We bring a refreshing perspective to connecting with your customers.</p>
             </div>
             <div class="col-sm-4">
                 <p class="why-lead">Children’s needs, childcare<br>costs, lack of flexibility, no<br>part-time options often<br>push women out of careers.</p>
