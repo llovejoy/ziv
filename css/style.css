@@ -178,16 +178,17 @@ a {
     top: -30px;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 1000px) {
     .text-home-lead-body {
-        font-size: 40px;
+        font-size: 30px;
+        padding-top: 30px;
     }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 800px) {
     .text-home-lead-body {
+        font-size: 25px;
         padding-top: 30px;
-        font-size: 30px;
     }
 }
 

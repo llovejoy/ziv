@@ -1,7 +1,7 @@
 <?php 
 	date_default_timezone_set('America/Chicago'); 
-	//$dom = "http://www.nathanfrancy.com/test/ziv/";
-    $dom = "http://ziv.local/";
+	$dom = "http://www.nathanfrancy.com/test/ziv/";
+    //$dom = "http://ziv.local/";
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -82,8 +82,7 @@
 
 	<div class="container-home-body">
 		<div class="home-body-text container">
-			<p class="text-home-lead-body">
-                We offer experience innovation and inter-disciplinary<br>strategic creative and technical skills that meet<br>today's marketing demands.</p>
+			<p class="text-home-lead-body">We offer experience innovation and inter-disciplinary<br>strategic creative and technical skills that meet<br>today's marketing demands.</p>
 			<br>
 			<p class="lead" style="font-size: 24px;">Whether it's creating a brand or implementing a digital solution to disrupt your industry, transforming your customer's experience to gain loyalty, or executing a marketing strategy for needed growth - <strong>we've got you covered.</strong>
 			</p>
