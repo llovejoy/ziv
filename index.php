@@ -82,10 +82,10 @@
 
 	<div class="container-home-body">
 		<div class="home-body-text container">
-			<p class="text-home-lead-body" style="">
+			<p class="text-home-lead-body">
                 We offer experience innovation and inter-disciplinary<br>strategic creative and technical skills that meet<br>today's marketing demands.</p>
 			<br>
-			<p class="lead" style="font-size: 24px;">Whether, it's creating a brand or implementing a digital solution to disrupt your industry, transforming your customer's experience to gain loyalty, or executing a marketing strategy for needed growth - <strong>we've got you covered.</strong>
+			<p class="lead" style="font-size: 24px;">Whether it's creating a brand or implementing a digital solution to disrupt your industry, transforming your customer's experience to gain loyalty, or executing a marketing strategy for needed growth - <strong>we've got you covered.</strong>
 			</p>
 			<br>
 			<div class="row">
@@ -95,7 +95,7 @@
 				</div>
 				<div class="col-sm-4 home-sections">
 					<h3 class="column-header">Transform</h3>
-					<p>Your customer's experience and perception determines if they buy from you. We are experts in UX design, branding, and marketing; ensuring you reach your business goals by building a brand that is relational and meaningful. You'll gian maximum advantage and <strong>measureable results</strong>.</p>
+					<p>Your customer's experience and perception determines if they buy from you. We are experts in UX design, branding, and marketing; ensuring you reach your business goals by building a brand that is relational and meaningful. You'll gain maximum advantage and <strong>measureable results</strong>.</p>
 				</div>
 				<div class="col-sm-4 home-sections">
 					<h3 class="column-header">Grow</h3>

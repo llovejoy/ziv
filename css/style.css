@@ -162,7 +162,7 @@ a {
         .photo-offset {
             top: 80px;
         }
-        .text-home-lead-body, .lead, .home-sections, .polish, .home-blueorange-bar, .home-foot, .footer {
+        .text-home-lead-body, .lead, .home-sections, .polish, .home-blueorange-bar, .footer {
             position: relative;
             top: 80px;
         }
@@ -171,11 +171,18 @@ a {
 
 
 .text-home-lead-body {
-	font-size: 40px;
+	font-size: 50px;
 	color: #444444;
 	font-weight: 200;
     position: relative; 
     top: -30px;
+}
+
+@media all and (max-width: 600px) {
+    .text-home-lead-body {
+        padding-top: 30px;
+        font-size: 30px;
+    }
 }
 
 .home-blueorange-bar {
@@ -208,6 +215,13 @@ a {
 	font-size: 35px;
 	color: #444444;
 	line-height: 45px;
+}
+
+@media all and (max-width: 600px) {
+    .hwch-lead {
+        font-size: 28px !important;
+        line-height: 35px;
+    }
 }
 
 .grey-blocks {
@@ -291,8 +305,17 @@ a {
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	font-size: 20px;
 	/*transition: all 0.1s linear;*/
+}
+
+.result-menu-item {
+    font-size: 20px;   
+}
+
+@media all and (max-width: 600px) {
+    .result-menu-item {
+        font-size: 14px;   
+    }
 }
 
 .results-active {
@@ -397,11 +420,10 @@ a {
 .why-lead {
     font-size: 19px;
     font-weight: 500;
-    
 }
 
 .why-body {
-    color: #333333;
+    color: #F27300;
     font-size: 15px;
 }
 

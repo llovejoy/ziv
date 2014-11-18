@@ -2,6 +2,8 @@
 require('../header.php');
 ?>
 
+<title>About Us</title>
+
 <div class="container-hwch-body">
 
 	<div class="top-bar">
@@ -74,12 +76,12 @@ require('../header.php');
 			<p class="cap-subtitle">OUR HISTORY</p>
 			<center>
 				<img src="../img/about-timeline.jpg" class="img-responsive"><br><br><br>
-				<img src="../img/about-map.jpg" class="img-responsive"><br>
+				<a href="../contact"><img src="../img/about-map.jpg" class="img-responsive" usemap="#image-maps-2014-11-17-192001"></a><br>
 			</center>
 		</div>
 	</div>
 	
-	<br><br>
+	<br><br><br>
 	
     <!--
 	<div class="container">
@@ -97,29 +99,49 @@ require('../header.php');
         <br>
         <div class="row">
             <div class="col-sm-4">
-                <p class="why-lead">Only 3% of creative<br>directors are women yet<br>women make 85% of the<br>buying decisions</p>
-                <p class="why-body">Female consumers were asked if brands understood them - 
-<a href="http://www.fastcompany.com/3006255/where-are-all-women-creative-directors">90% said no</a>. We bring a refreshing perspective to connecting with your customers.</p>
+                <p class="why-lead">
+                    <span>Only 3% of creative directors</span><br>
+                    <span>are women yet women make</span><br>
+                    <span>85% of buying decisions.</span></p>
+                <p class="why-body">
+                    <span>Female consumers were asked if brands</span><br>
+                    <span>understood them - <a href="http://www.fastcompany.com/3006255/where-are-all-women-creative-directors">90% said no</a>. We</span><br>
+                    <span>bring a refreshing perspective to</span><br>
+                    <span>connecting with your customers.</span></p>
             </div>
             <div class="col-sm-4">
-                <p class="why-lead">Children’s needs, childcare<br>costs, lack of flexibility, no<br>part-time options often<br>push women out of careers.</p>
-                <p class="why-body">Given women’s desire to stay in their career we offer an alternative to the demands of corporate america and traditional agency work life balance.</p>
+                <p class="why-lead">
+                    <span>Kid’s needs, daycare costs,</span><br>
+                    <span>and no flexible options often</span><br>
+                    <span>push women out of careers.</span></p>
+                <p class="why-body">
+                   <span>Given women’s desire to stay in their</span><br>
+                    <span>career we offer an alternative to the</span><br>
+                    <span>demands of corporate america and</span><br>
+                    <span>traditional agency work life balance.</span></p>
             </div>
             <div class="col-sm-4">
-                <p class="why-lead">Women make up 70% of<br>the 1.6 billion people in<br>the world living in<br>extreme poverty.</p>
-                <p class="why-body">In developing countries when women earn more, they spend it on their families, decreasing poverty generationally. We give back to organizations who transform women economically.</p>
+                <p class="why-lead">Women make up 70% of the</span><br>
+                    <span>1.6 billion people globally</span><br>
+                    <span>who live in extreme poverty.</span></p>
+                <p class="why-body">
+                    <span>Women in developing countries spend</span><br>
+                    <span>earnings on family, reducing poverty</span><br>
+                    <span>generationally. We support groups</span><br>
+                    <span>who transform women economically.</span></p>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12">
                 <center>
-                    <br>
+                    <br><br>
                     <a href="#"><img src="../img/worldvision.png" class="why-logo img-responsive"></a>&nbsp;
                     <a href="#"><img src="../img/womensemployment.png" class="why-logo img-responsive"></a>
                 </center>
-                <br><br>
+                <br><br><br>
             </div>
         </div>
+        
     </div>
 
 	<div class="home-foot text-center" style="background-color: #ebebeb;">
@@ -130,6 +152,9 @@ require('../header.php');
 </div>
 
 <script>
+    textFit($(".why-lead span"), { maxFontSize: 19 });
+    textFit($(".why-body span"), { maxFontSize: 15 });
+    
     $(".menu li:nth-child(4) a").addClass("active-menu-item");
 
     var first_keywords = ["ideas", "concepts", "initiatives"];

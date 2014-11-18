@@ -2,6 +2,8 @@
 require('../header.php');
 ?>
 
+<title>How We Can Help</title>
+
 <div class="container-hwch-body">
 
 	<div class="top-bar">
@@ -15,7 +17,7 @@ require('../header.php');
 	<br><br>
 
 	<div class="container">
-		<h3 class="hwch-lead">We shine a light in a discovery phase and study your<br>business landscape. This research sparks innovation that we<br>synthesize into digital, branding, or marketing solutions that<br>are sustainable and profitable.</h3>
+		<h3 class="hwch-lead">We shine a light in a discovery phase and study your business landscape. This research sparks innovation that we synthesize into digital, branding, or marketing solutions that are sustainable and profitable.</h3>
 	</div>
 
 	<br><br><br>
@@ -26,11 +28,11 @@ require('../header.php');
             <div class="row">
                 <div class="container blocks">
                     
-                    <div id="core1" class="col-md-6" style="border-right: 5px white solid;">
+                    <div id="core1" class="col-md-6" style="border-right: 5px white solid; padding-top: 30px;">
                         <h3 class="column-header">Innovation and Branding</h3>
                         <p class="core-service-intro">Facilitating the entire process to ensure truly<br>breakthrough and disruptive outcomes.</p>
                         <ul>
-                            <li>Indeation &amp; Product management</li>
+                            <li>Ideation &amp; Product management</li>
                             <li>Naming and branding</li>
                             <li>Product Licensing</li>
                             <li>Manufacturing</li>
@@ -38,7 +40,7 @@ require('../header.php');
                         </ul>
 						
                     </div>
-                    <div id="core2" class="col-md-6" style="border-left: 5px white solid; padding-left: 70px;">
+                    <div id="core2" class="col-md-6" style="border-left: 5px white solid; padding-left: 40px; padding-top: 30px;">
                         <h3 class="column-header">Experience Design</h3>
                         <p class="core-service-intro">Experiences for your customers that grows<br>your business and a loyal consumer base.</p>
                         <ul>
@@ -55,7 +57,7 @@ require('../header.php');
              <div id="breaker" style="position: absolute;left: 0; width: 100%; height: 10px; background-color: white;"></div>
             <div class="row" class="padding-top: 0px !important;">
                 <div class="container blocks">
-                    <div id="core3" class="col-md-6" style="border-right: 5px white solid;">
+                    <div id="core3" class="col-md-6" style="border-right: 5px white solid; padding-top: 30px;">
                         <h3 class="column-header">Strategic Consulting</h3>
                         <p class="core-service-intro">The right growth in the right direction with the<br>ability to pivot in an evolving market.</p>
                         <ul>
@@ -64,7 +66,7 @@ require('../header.php');
                             <li>Business Strategy</li>
                         </ul>
                     </div>
-                        <div id="core4" class="col-md-6" style="border-left: 5px white solid; padding-left: 70px;">
+                        <div id="core4" class="col-md-6" style="border-left: 5px white solid; padding-left: 40px; padding-top: 30px;">
                             <h3 class="column-header">Relational Marketing</h3>
                             <p class="core-service-intro">Making sure every touchpoint works to<br>retain the customer.</p>
                             <ul>
@@ -108,7 +110,7 @@ require('../header.php');
             </div>
         </div>
     
-    <br><br>
+    <br>
     
 	<!--
     <div class="container">
@@ -137,8 +139,6 @@ require('../header.php');
 		</div>
 	</div>
     
-    <br>
-
 	<div class="home-foot text-center">
 		<h3>Need a partner for your next initiative?</h3>
 		<p class="call-to-action-body">Let's talk. <a href="<?php echo $dom; ?>contact">Connect with us.</a></p>
@@ -148,10 +148,6 @@ require('../header.php');
 <script>
     $(".menu li:nth-child(2) a").addClass("active-menu-item");
 
-    textFit($('.hwch-lead'), {
-        multiLine: true,
-        maxFontSize: 34
-    });
     textFit($('.core-service-intro'), {
         multiLine: true,
         maxFontSize: 14

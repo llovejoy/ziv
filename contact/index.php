@@ -2,6 +2,8 @@
 require( '../header.php');
 ?>
 
+<title>Contact Us</title>
+
 <div class="container-hwch-body">
 
 	<div class="top-bar">

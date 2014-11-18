@@ -2,6 +2,8 @@
 require('../header.php');
 ?>
 
+<title>Results</title>
+
 <div class="container-hwch-body">
 
 	<div class="top-bar">
@@ -27,7 +29,7 @@ require('../header.php');
 		<p class="results-body-paragraph">So your customer can understand you, relate to you, share you, and successfully accomplish any digital tasks.</p>
 		
 		<h3 class="results-body-header">Stand out with excellence</h3>
-		<p class="results-body-paragraph">Be relevant to your customers- we'll connect the marketing and branding dots.</p>
+		<p class="results-body-paragraph">Be relevant to your customers―we'll connect the marketing and branding dots.</p>
 		
 		<h3 class="results-body-header">Leap frog the competition</h3>
 		<p class="results-body-paragraph">Innovate against your competitors to find your competitive advantage.</p>
@@ -36,7 +38,7 @@ require('../header.php');
 		<p class="results-body-paragraph">Your business will know how it should grow next and with a brilliant strategy.</p>
 		
 		<h3 class="results-body-header">Expect exceptional results</h3>
-		<p class="results-body-paragraph">Your bottomline matters- we create for results.</p>
+		<p class="results-body-paragraph">Your bottomline matters―we create for results.</p>
 	</div>
 	
 	<br><br>
