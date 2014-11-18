@@ -12,7 +12,7 @@ require('../header.php');
 		</div>
 	</div>
 
-	<img src="../img/hwch-body.jpg" class="photo-full-size">
+	<img src="../img/hwch-body.jpg" srcset="../img/hwch-body-mobile.jpg 600w, ../img/hwch-body.jpg 1000w" class="photo-full-size">
 
 	<br><br>
 

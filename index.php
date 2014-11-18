@@ -137,7 +137,6 @@
     
     <script>
         textFit($(".polish"), {});
-        textFit($(".text-home-lead-body"), { multiLine: true, maxFontSize: 40 });
     </script>
     
     <style>

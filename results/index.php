@@ -12,7 +12,7 @@ require('../header.php');
 		</div>
 	</div>
 
-	<img src="../img/results-top-graphic.jpg" class="photo-full-size">
+    <img src="../img/results-top-graphic.jpg" srcset="../img/results-top-graphic-mobile.jpg 600w, ../img/results-top-graphic.jpg 1000w" class="photo-full-size">
 
 	<br><br>
 

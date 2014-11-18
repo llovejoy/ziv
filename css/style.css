@@ -171,11 +171,17 @@ a {
 
 
 .text-home-lead-body {
-	font-size: 50px;
+	font-size: 40px;
 	color: #444444;
 	font-weight: 200;
     position: relative; 
     top: -30px;
+}
+
+@media all and (max-width: 600px) {
+    .text-home-lead-body {
+        font-size: 40px;
+    }
 }
 
 @media all and (max-width: 600px) {
@@ -215,6 +221,10 @@ a {
 	font-size: 35px;
 	color: #444444;
 	line-height: 45px;
+}
+
+.hwch-top-photo {
+
 }
 
 @media all and (max-width: 600px) {
