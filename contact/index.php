@@ -45,6 +45,7 @@ require( '../header.php');
                     <div class="form-group">
 						<label for="ziv-body">Security question: Is fire hot or cold?</label>
 						<input type="text" class="form-control" id="ziv-security">
+                        <span style="font-size: 15px; color: #858585;">(So we know you're a real person)</span>
 					</div>
 					<button type="button" class="btn btn-primary btn-lg" style="padding-left: 30px; padding-right: 30px;" id="ziv-submit">SEND</button>
 				</form>
@@ -66,7 +67,7 @@ require( '../header.php');
 				<hr class="contact-sidebar-hr">
 				
 				<h4 class="contact-sidebar-header">Call us</h4>
-				<p class="contact-sidebar-paragraph">913-393-2053</p>
+				<p class="contact-sidebar-paragraph">+ 913 624-1612</p>
 				
 				<hr class="contact-sidebar-hr">
 				
@@ -91,7 +92,7 @@ require( '../header.php');
 					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 					<div style="position: absolute; left: -5000px;"><input type="text" name="b_5577102d1725680a86547940e_03a490def2" tabindex="-1" value=""></div>
 						<br>
-					<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg" style="color: white; padding-right: 30px;"></div>
+					<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg" style="color: white; padding-right: 30px; border-radius: 4px !important;"></div>
 					</div>
 				</form>
 				</div>

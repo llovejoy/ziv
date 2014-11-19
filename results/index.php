@@ -117,7 +117,7 @@ $.getJSON('../js/results.json', function(data) {
 	resultData = data;
 
 	for (var i = 0; i < data.length; i++) {
-  		$(".results-menu-container-ul").append("<li class='result-menu-item' resultid='"+ data[i].id +"'>" + data[i].title + "</li>");
+  		$(".results-menu-container-ul").append("<li resultid='"+ data[i].id +"'><a href='#' class='result-menu-item'>" + data[i].title + "</a></li>");
     }
 	$(".results-menu-container-ul li").width( (100 / data.length) + "%" );
 	switchResult(0);
@@ -204,10 +204,13 @@ function replaceArrows() {
     }
 }
 	
-$(document).on("click", ".result-menu-item", function() {
-	var id = parseInt($(this).attr("resultid"));
+$(document).on("click", ".result-menu-item", function(e) {
+    e.preventDefault();
+    $(".result-menu-item").removeClass("strong-result");
+	var id = parseInt($(this).parent("li").attr("resultid"));
 	switchResult(id);
-	$(this).addClass("results-active");
+	$(this).parent("li").addClass("results-active");
+    $(this).addClass("strong-result");
 });
 </script>
 

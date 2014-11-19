@@ -30,7 +30,7 @@ require('../header.php');
 						<img src="../img/linkedin2.png" style="float: right;">
 					</a>
 					Cara Miller<br>
-					<span class="about-team-title">Chief Experience Officer</span>
+					<span class="about-team-title">Chief Creative Strategist</span>
 				</h4>
 			</div>
 			<div class="col-sm-3">
@@ -40,7 +40,7 @@ require('../header.php');
 						<img src="../img/linkedin2.png" style="float: right;">
 					</a>
 					Lyssa Surface<br>
-					<span class="about-team-title">Account Management</span>
+					<span class="about-team-title">Director of Accounts and Insights</span>
 				</h4>
 			</div>
 			<div class="col-sm-3">

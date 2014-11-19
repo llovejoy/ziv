@@ -3,20 +3,20 @@
             <div class="footer-wrapper">
 
                 <div class="container-fluid">
-                    <div class="col-sm-4 foot-cont">
+                    <div class="col-sm-4 foot-cont" style="padding-left: 0px; padding-right: 40px;">
                         <strong>ABOUT US</strong>
                         <p>We're innovation thinkers ready to help grow your business by creating valuable customer experiences.</p>
                         <a href="<?php echo $dom;?>about" class="btn btn-lg btn-primary">LEARN MORE</a>
                     </div>
-                    <div class="col-sm-4 foot-cont">
+                    <div class="col-sm-4 foot-cont" style="padding-left: 40px; padding-right: 40px;">
                         <strong>OUR WORK</strong>
                         <p>We translate your business goals into solutions that facilitate positive customer perceptions and relationships.</p>
                         <a href="<?php echo $dom;?>results" class="btn btn-lg btn-primary">SEE OUR WORK</a>
                     </div>
-                    <div class="col-sm-4 foot-cont">
+                    <div class="col-sm-4 foot-cont" style="padding-left: 40px; padding-right: 0px;">
                         <strong>CONNECT</strong>
                         <p style="padding-bottom: 0px;">We'd love to hear from (and about) you! Let's meet and tweet!</p>
-                        <p style="padding-top: 0px; padding-bottom: 0px;">+ 913 485-2352</p>
+                        <p style="padding-top: 0px; padding-bottom: 0px;">+ 913 624-1612</p>
                         <p style="padding-top: 0px; padding-bottom: 0px; color: #BBBBBB !important;" class="connect"><a href="https://twitter.com/boxspringdesign" style="color: #BBBBBB !important;"><img src="<?php echo $dom; ?>img/twitter.png" style="height: 14px;"> TWITTER &nbsp;&nbsp; <a href="https://www.linkedin.com/company/boxspring-design" style="color: #BBBBBB !important;"><img src="<?php echo $dom; ?>img/linkedin.png" style="height: 14px;"> LINKEDIN</a></p>
                     </div>
 
