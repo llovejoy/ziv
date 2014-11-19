@@ -28,7 +28,7 @@ require('../header.php');
             <div class="row">
                 <div class="container blocks">
                     
-                    <div id="core1" class="col-md-6" style="border-right: 5px white solid; padding-top: 30px;">
+                    <div id="core1" class="col-md-6" style="border-right: 5px white solid; padding-top: 20px; padding-bottom: 30px;">
                         <h3 class="column-header">Innovation and Branding</h3>
                         <p class="core-service-intro">Facilitating the entire process to ensure truly<br>breakthrough and disruptive outcomes.</p>
                         <ul>
@@ -40,7 +40,7 @@ require('../header.php');
                         </ul>
 						
                     </div>
-                    <div id="core2" class="col-md-6" style="border-left: 5px white solid; padding-left: 40px; padding-top: 30px;">
+                    <div id="core2" class="col-md-6" style="border-left: 5px white solid; padding-left: 40px; padding-top: 20px; padding-bottom: 30px;">
                         <h3 class="column-header">Experience Design</h3>
                         <p class="core-service-intro">Experiences for your customers that grows<br>your business and a loyal consumer base.</p>
                         <ul>
@@ -57,7 +57,7 @@ require('../header.php');
              <div id="breaker" style="position: absolute;left: 0; width: 100%; height: 10px; background-color: white;"></div>
             <div class="row" class="padding-top: 0px !important;">
                 <div class="container blocks">
-                    <div id="core3" class="col-md-6" style="border-right: 5px white solid; padding-top: 30px;">
+                    <div id="core3" class="col-md-6" style="border-right: 5px white solid; padding-top: 20px; padding-bottom: 30px;">
                         <h3 class="column-header">Strategic Consulting</h3>
                         <p class="core-service-intro">The right growth in the right direction with the<br>ability to pivot in an evolving market.</p>
                         <ul>
@@ -66,7 +66,7 @@ require('../header.php');
                             <li>Business Strategy</li>
                         </ul>
                     </div>
-                        <div id="core4" class="col-md-6" style="border-left: 5px white solid; padding-left: 40px; padding-top: 30px;">
+                        <div id="core4" class="col-md-6" style="border-left: 5px white solid; padding-left: 40px; padding-top: 20px; padding-bottom: 30px;">
                             <h3 class="column-header">Relational Marketing</h3>
                             <p class="core-service-intro">Making sure every touchpoint works to<br>retain the customer.</p>
                             <ul>

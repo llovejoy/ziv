@@ -535,8 +535,8 @@ input {
 	.foot-cont {
 		padding-top: 20px;
 		padding-bottom: 20px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
 	}
 }
 
@@ -650,10 +650,12 @@ input {
 @media all and (max-width: 767px) {
 	#hwp-women {
 		background-image: url() !important;
+        height: initial !important;
+		max-height: initial !important;
 	}
 	.hwp-women {
-		height: inherit !important;
-		max-height: inherit !important;
+		height: initial !important;
+		max-height: initial !important;
 	}
 }
 
