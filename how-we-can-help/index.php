@@ -17,7 +17,7 @@ require('../header.php');
 	<br><br>
 
 	<div class="container">
-		<h3 class="hwch-lead">We shine a light in a discovery phase and study your business landscape. This research sparks innovation that we synthesize into digital, branding, or marketing solutions that are sustainable and profitable.</h3>
+		<h3 class="hwch-lead">We shine a light in a discovery phase and study your business landscape; this research sparks innovation that we synthesize into digital, branding, or marketing solutions that are sustainable and profitable.</h3>
 	</div>
 
 	<br><br><br>
