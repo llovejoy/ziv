@@ -149,7 +149,7 @@ require( '../header.php');
         
         if ( name.length > 0 && email.length > 0 && subject.length > 0 && body.length > 0)
         {
-            if ($("#ziv-security").val() == "hot") {
+            if ( ($("#ziv-security").val() == "hot") || ($("#ziv-security").val() == "Hot")) {
                 $.ajax({
                   type: "POST",
                   url: "../processForm.php",
