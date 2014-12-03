@@ -55,16 +55,16 @@ require('../header.php');
 	<div class="features container">
 		<div class="row feature-zoomin">
 			<div class="col-sm-7">
-				<h3 class="feature-heading">Challenge</h3>
+				<h3 class="feature-heading" id="feature-heading-challenge">Challenge</h3>
 				<p class="feature-paragraph" id="result-challenge"></p>
 				
-				<h3 class="feature-heading">Approach</h3>
+				<h3 class="feature-heading" id="feature-heading-approach">Approach</h3>
 				<p class="feature-paragraph" id="result-approach"></p>
 				
-				<h3 class="feature-heading">Results</h3>
+				<h3 class="feature-heading" id="feature-heading-results">Results</h3>
 				<p class="feature-paragraph" id="result-results"></p>
 				
-				<h3 class="feature-heading">Capabilities</h3>
+				<h3 class="feature-heading" id="feature-heading-capabilities">Capabilities</h3>
 				<ul class="feature-list" id="result-capabilities"></ul>
 			</div>
 			<div id="results-slider" class="col-sm-5">
@@ -117,31 +117,57 @@ $.getJSON('../js/results.json', function(data) {
 	resultData = data;
 
 	for (var i = 0; i < data.length; i++) {
-  		$(".results-menu-container-ul").append("<li resultid='"+ data[i].id +"'><a href='#' class='result-menu-item'>" + data[i].title + "</a></li>");
+        var firstclass = "";
+        var secondclass = "";
+        if (i === 0) { firstclass = "results-active"; secondclass = "strong-result" }
+        
+  		$(".results-menu-container-ul").append("<li resultid='"+ data[i].id +"' class='"+ firstclass +"'><a href='#' class='result-menu-item "+ secondclass +"'>" + data[i].title + "</a></li>");
     }
 	$(".results-menu-container-ul li").width( (100 / data.length) + "%" );
 	switchResult(0);
-	$(".result-menu-item[resultid=0]").addClass("results-active");
     currentPagLength = resultData[0].images.length;
     currentIndex = 0;
 });
 	
 function switchResult(id) {
+    // Show all headings by default
+    $("#feature-heading-challenge").show();
+    $("#feature-heading-approach").show();
+    $("#feature-heading-results").show();
+    $("#feature-heading-capabilities").show();
+    
 	// Clean area up, replace with pertinent values
-	$(".results-menu-container-ul li").removeClass("results-active");
 	$("#result-capabilities").html('');
 	$("#result-challenge").html(resultData[id].challenge);
 	$("#result-approach").html(resultData[id].approach);
 	$("#result-results").html(resultData[id].results);
+    
+    // Hide the headings of attributes that are empty
+    if (resultData[id].challenge === "") {
+        $("#feature-heading-challenge").hide();
+    }
+    if (resultData[id].approach === "") {
+        $("#feature-heading-approach").hide();
+    }
+    if (resultData[id].results === "") {
+        $("#feature-heading-results").hide();
+    }
+    
     currentIndex = id;
     currentPag = 1;
     currentPagLength = resultData[currentIndex].images.length;
 	
 	// Fill capabilities
 	var capabilities = resultData[id].capabilities;
-	for (var i = 0; i < capabilities.length; i++) {
-		$("#result-capabilities").append("<li>" + resultData[id].capabilities[i] + "</li>");
-	}
+    
+    if (capabilities.length > 0) {
+        for (var i = 0; i < capabilities.length; i++) {
+            $("#result-capabilities").append("<li>" + resultData[id].capabilities[i] + "</li>");
+        }
+    }
+    else {
+        $("#feature-heading-capabilities").hide();
+    }
 	
 	// Replace image with first pertinent image available
 	$("#slider-current-img").attr("src", imageDirectory + resultData[id].images[0]);
@@ -206,12 +232,14 @@ function replaceArrows() {
 	
 $(document).on("click", ".result-menu-item", function(e) {
     e.preventDefault();
+    $(".results-menu-container-ul li").removeClass("results-active");
     $(".result-menu-item").removeClass("strong-result");
 	var id = parseInt($(this).parent("li").attr("resultid"));
 	switchResult(id);
 	$(this).parent("li").addClass("results-active");
     $(this).addClass("strong-result");
 });
+    
 </script>
 
 <?php

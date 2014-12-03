@@ -314,20 +314,24 @@ a {
 	padding: 0px;
 	margin: 0px;
 	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
 	/*transition: all 0.1s linear;*/
+}
+
+.results-menu-container-ul li a {
+    padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .result-menu-item {
     font-size: 20px;
-    color: white;
+    color: white !important;
     display: inline-block;
+    text-decoration: none !important;
 }
 
 .result-menu-item:hover {
-    color: white;
-    text-decoration: none;
+    color: white !important;
+    text-decoration: none !important;
 }
 
 .strong-result {
