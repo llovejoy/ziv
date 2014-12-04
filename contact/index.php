@@ -85,17 +85,24 @@ require( '../header.php');
 					/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 					   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 				</style>
-				<div id="mc_embed_signup">
-				<form action="//noteroo.us5.list-manage.com/subscribe/post?u=5577102d1725680a86547940e&amp;id=03a490def2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" style="padding: 0px;" novalidate>
-					<div id="mc_embed_signup_scroll">
-					<input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="email address" required>
-					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					<div style="position: absolute; left: -5000px;"><input type="text" name="b_5577102d1725680a86547940e_03a490def2" tabindex="-1" value=""></div>
-						<br>
-					<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg" style="color: white; padding-right: 30px; border-radius: 4px !important;"></div>
-					</div>
-				</form>
-				</div>
+				<!-- Begin MailChimp Signup Form -->
+                <div id="mc_embed_signup">
+                <form action="//boxspringdesign.us5.list-manage.com/subscribe/post?u=5577102d1725680a86547940e&amp;id=5e00fea4c1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" style="padding: 0px !important; margin: 0px !important;" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                <div class="mc-field-group">
+                    <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Email">
+                </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_5577102d1725680a86547940e_5e00fea4c1" tabindex="-1" value=""></div>
+                    <div class="clear"><input style="border-radius: 4px !important;" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
+                    </div>
+                </form>
+                </div>
+
+                <!--End mc_embed_signup-->
 
 				<!--End mc_embed_signup-->
 			</div>
