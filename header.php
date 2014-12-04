@@ -1,6 +1,6 @@
 <?php
 	date_default_timezone_set('America/Chicago');
-	$dom = "http://www.boxspringdesign.com/ziv/";
+	$dom = "http://www.letsziv.com/";
 	//$dom = "http://ziv.local/";
 ?>
 <!DOCTYPE html>
