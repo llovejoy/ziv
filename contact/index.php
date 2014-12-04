@@ -54,13 +54,13 @@ require( '../header.php');
 				<h4 class="contact-sidebar-header">You can find us here</h4>
 				<p class="contact-sidebar-paragraph">
 					<span class="contact-sidebar-place">Kansas City</span><br>
-                    8527 Bluejacket St<br>Lenexa, KS 66214<br>
+                    8527 Bluejacket St<br>Lenexa, KS, 66214<br>
                     
 					<a class="contact-sidebar-link">Get Directions</a>
 				</p>
 				<p class="contact-sidebar-paragraph">
 					<span class="contact-sidebar-place">Boulder</span><br>
-					25501 West Valley Parkway,<br>Boulder, Colorado 66061<br>
+					1310 College Avenue,<br>Boulder, CO, 80302<br>
 					<a class="contact-sidebar-link">Get Directions</a>
 				</p>
 				
