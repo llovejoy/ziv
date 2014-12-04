@@ -56,12 +56,12 @@ require( '../header.php');
 					<span class="contact-sidebar-place">Kansas City</span><br>
                     8527 Bluejacket St<br>Lenexa, KS, 66214<br>
                     
-					<a class="contact-sidebar-link">Get Directions</a>
+					<a class="contact-sidebar-link" href="https://www.google.com/maps/place/8527+Bluejacket,+Lenexa,+KS+66214/@38.9739495,-94.7100959,17z/data=!3m1!4b1!4m2!3m1!1s0x87c0eb5edc1497d1:0xde7fe472608cbd37">Get Directions</a>
 				</p>
 				<p class="contact-sidebar-paragraph">
 					<span class="contact-sidebar-place">Boulder</span><br>
 					1310 College Avenue,<br>Boulder, CO, 80302<br>
-					<a class="contact-sidebar-link">Get Directions</a>
+					<a class="contact-sidebar-link" href="https://www.google.com/maps/place/1310+E+College+Ave,+Boulder,+CO+80302/@40.0071585,-105.2760413,17z/data=!4m7!1m4!3m3!1s0x876bec30cff21e91:0xbd7cdcfc563b1d4f!2s1310+E+College+Ave,+Boulder,+CO+80302!3b1!3m1!1s0x876bec30cff21e91:0xbd7cdcfc563b1d4f">Get Directions</a>
 				</p>
 				
 				<hr class="contact-sidebar-hr">
