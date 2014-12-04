@@ -118,7 +118,7 @@ require('../header.php');
     </div>
 	-->
 	
-	<div class="container-fluid" style="background-image: url(../img/blue-bar.jpg); background-repeat: no-repeat;">
+	<div class="container-fluid" style="background-image: url(../img/blue-bar.jpg); background-repeat: no-repeat; background-size: cover;">
 		<div class="container" id="hwp-women" style="background-image: url(../img/how-we-partner.png); background-repeat: no-repeat; background-size: contain; max-height: 350px; height: 350px;">
 			<div class="row">
 				<div class="col-sm-5">

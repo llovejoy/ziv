@@ -88,7 +88,7 @@ require('../header.php');
 			<div class="col-sm-1"></div>
 			<div class="col-sm-10">
 				<br>
-				<p class="results-quote-body">Wanted to let you know the solution went to beta last week with our first retail client. Feedback has been very favorable on the design and intuitive nature of the product. Thanks for all the help and guideance in creating a good product and user experience.</p>
+				<p class="results-quote-body">Wanted to let you know the solution went to beta last week with our first retail client. Feedback has been very favorable on the design and intuitive nature of the product. Thanks for all the help and guidance in creating a good product and user experience.</p>
 				<p class="results-quote-author">Charles Murphy <br><span class="results-quote-title">Online banking solution</span></p>
 				<br>
 			</div>
