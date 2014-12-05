@@ -83,7 +83,7 @@
 
 	<div class="container-home-body">
 		<div class="home-body-text container">
-			<p class="text-home-lead-body">We offer experience innovation with inter-disciplinary<br>strategic, creative, and technical skills that meet<br>today's marketing demands.</p>
+			<p class="text-home-lead-body">We offer experience innovation with inter-disciplinary <br>strategic, creative, and technical skills that meet <br>today's marketing demands.</p>
 			<br>
 			<p class="lead" style="font-size: 24px;">Whether it's creating a brand or implementing a digital solution to disrupt your industry, transforming your customer's experience to gain loyalty, or executing a marketing strategy for needed growth - <strong>we've got you covered.</strong>
 			</p>
@@ -99,7 +99,7 @@
 				</div>
 				<div class="col-sm-4 home-sections">
 					<h3 class="column-header">Grow</h3>
-					<p>Your business should always be evolving. Powerful brand story-telling, impactful design and valuable content conveyed in engaging new ways means growth with maximum reach and <strong>profitable growth</strong>.</p>
+					<p>Your business should always be evolving. Powerful brand story-telling, impactful design and valuable content conveyed in engaging new ways means growing with maximum reach and <strong>profitable growth</strong>.</p>
 				</div>
 			</div>
 			<br>

@@ -22,9 +22,9 @@
 	{
 		"id" : 1,
 		"title": "Texada",
-		"challenge": "<p>Texada, a software development company that builds a variety of software products, was finding that their competitors were moving in impinging on their market with newer more user-friendly systems. As a stop gap they wanted to upgrade their system without investing in a new backend.</p>",
-		"approach": "<p>Taking their existing the screens and user flows, we created three distinct looks to provide a fresh vision for the system. Once an approach was selected we applied that to their interface, along with fresh iconography and restructured pages.</p>",
-		"results": "<p>Best summed up by the solution owner…</p>",
+		"challenge": "<p>Texada, a software development company that builds a variety of software products, was finding that their competitors were impinging on their market with newer more user-friendly systems. As a stop gap they wanted to upgrade their system without investing in a new backend.</p>",
+		"approach": "<p>Taking their existing screens and user flows, we created three distinct looks to provide a fresh vision for the system. Once an approach was selected we applied that to their interface, along with fresh iconography and restructured pages.</p>",
+		"results": "<p>Although initially intended to simply be a re-skin, incremental improvements were made to page flow and formatting resulting in a successful new solution.</p>",
 		"capabilities": [
 			"Interface design",
 			"Visual design",
