@@ -12,7 +12,25 @@ require('../header.php');
 		</div>
 	</div>
 
-    <img src="../img/about-top-photo.jpg" srcset="../img/about-top-photo-mobile.jpg 600w, ../img/about-top-photo.jpg 1000w" class="photo-full-size">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="5000">
+        <!-- Indicators -->
+        <!--<ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>-->
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="../img/top-01.jpg" alt="Our Kansas City Office">
+            </div>
+            <div class="item">
+                <img src="../img/top-02.jpg" alt="Our Denver Office">
+            </div>
+        </div>
+    </div>
+
+    <!--<img src="../img/about-top-photo.jpg" srcset="../img/about-top-photo-mobile.jpg 600w, ../img/about-top-photo.jpg 1000w" class="photo-full-size">-->
 
 	<br><br>
 
