@@ -62,16 +62,6 @@ require('../header.php');
 				</h4>
 			</div>
 			<div class="col-sm-3">
-				<img src="<?php echo $dom; ?>img/profiles/deann.jpg" class="img-responsive"><br>
-				<h4 class="about-team-name">
-					<a href="https://www.linkedin.com/pub/deann-garrett/82/3b8/53">
-						<img src="../img/linkedin2.png" style="float: right;">
-					</a>
-					DeAnn Garret<br>
-					<span class="about-team-title">Office Administrator and Project coordinator</span>
-				</h4>
-			</div>
-			<div class="col-sm-3">
 				<img src="<?php echo $dom; ?>img/profiles/lindsay.jpg" class="img-responsive"><br>
 				<h4 class="about-team-name">
 					<a href="https://www.linkedin.com/pub/lindsay-lovejoy/98/b29/63">
