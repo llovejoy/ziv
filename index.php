@@ -111,15 +111,15 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-5">
-						<h1 style="font-size: 35px;">Being said...</h1>
-						<p style="font-size: 23px;">The lowdown on emotional branding <a href="http://ow.ly/zvozU" style="color: white;">ow.ly/zvozU</a>
-							<br><small style="font-size: 14px;">Aug 13</small>
+                        <h1 style="font-size: 35px;"><a href="https://twitter.com/letsziv" style="color: white;">Being said...</a></h1>
+						<p style="font-size: 23px;">Where does North America stack up when it comes to women in the workplace? Check the stats with Fortune Magazine!<a href="http://ow.ly/KpsXb" style="color: white;">http://ow.ly/KpsXb</a>
+							<br><small style="font-size: 14px;">April 21</small>
 						</p>
 					</div>
 					<div class="col-sm-5 col-sm-offset-2">
 						<h1 style="font-size: 35px;">What we're up to</h1>
-						<p style="font-size: 23px;">Our startup client hit their 3 month projection out of the gate.
-							<br><small style="font-size: 14px;">Aug 13</small>
+                        <p style="font-size: 23px;">Our founder Cara is speaking at a <a href="http://classsearch.jccc.edu/student/ClassSearch/class/results/term_type/ContinuingEd/term_code/201500?query=91202" style="color: white;">JCCC Lunch Panel</a>!
+							<br><small style="font-size: 14px;">April 22</small>
 						</p>
 					</div>
 				</div>
